@@ -1,5 +1,5 @@
-angular.module('testerApp', ["ui.router", "ui.grid", "ngAnimate", "ngAria", "ngMaterial"])
-.config(['$urlRouterProvider', '$stateProvider', '$mdThemingProvider'], function($urlRouterProvider, $stateProvider, $mdThemingProvider) {
+angular.module('testerApp', ['ui.router', 'ui.grid', 'ngAnimate', 'ngAria', 'ngMaterial'])
+.config(['$urlRouterProvider', '$stateProvider', '$mdThemingProvider', function ($urlRouterProvider, $stateProvider, $mdThemingProvider) {
 	$stateProvider
 	.state('home', {
 		url: '/home',
@@ -16,4 +16,4 @@ angular.module('testerApp', ["ui.router", "ui.grid", "ngAnimate", "ngAria", "ngM
 //	 	templateUrl: 'templates/studentTmpl.html',
 //	 	controller: 'studentCtrl'
 // })
-});
+}]);

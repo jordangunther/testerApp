@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = '';
 
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -67,8 +67,8 @@
 /* 1 */
 /***/ function(module, exports) {
 
-	angular.module('testerApp', ["ui.router", "ui.grid", "ngAnimate", "ngAria", "ngMaterial"])
-	.config(['$urlRouterProvider', '$stateProvider', '$mdThemingProvider'], function($urlRouterProvider, $stateProvider, $mdThemingProvider) {
+	angular.module('testerApp', ['ui.router', 'ui.grid', 'ngAnimate', 'ngAria', 'ngMaterial'])
+	.config(['$urlRouterProvider', '$stateProvider', '$mdThemingProvider', function($urlRouterProvider, $stateProvider, $mdThemingProvider) {
 		$stateProvider
 		.state('home', {
 			url: '/home',
@@ -85,7 +85,7 @@
 	//	 	templateUrl: 'templates/studentTmpl.html',
 	//	 	controller: 'studentCtrl'
 	// })
-	});
+}]);
 
 /***/ },
 /* 2 */
