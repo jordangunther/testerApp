@@ -1,2 +1,5 @@
 node_modules
 bower/
+.sass-cache
+./Public/.sass-cache
+*.css.map
