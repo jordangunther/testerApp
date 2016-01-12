@@ -7,4 +7,39 @@ div {
   margin: 0;
   padding: 0; }
 
+body {
+  overflow: hidden; }
+
+.main-header {
+  width: 100vw;
+  min-height: 60px;
+  max-height: 15vh;
+  background-color: darkgray;
+  position: fixed;
+  top: 0; }
+  .main-header--content {
+    width: 90%;
+    margin: 0 auto; }
+    .main-header--content h1 {
+      font-size: 2em;
+      display: inline-block;
+      color: #404040; }
+      .main-header--content h1:nth-child(2) {
+        color: orange; }
+    .main-header--content .expand-button {
+      width: 90px;
+      height: 40px;
+      float: right;
+      border: 3px solid lightgray;
+      color: gray;
+      margin: 2vh 0 0 0;
+      transition: all 0.2s ease-in-out;
+      border-radius: 5%; }
+      .main-header--content .expand-button:hover {
+        background-color: rgba(255, 255, 255, 0.3); }
+      .main-header--content .expand-button p {
+        margin: 10% 0 0 0;
+        position: relative;
+        left: 25%; }
+
 /*# sourceMappingURL=style.css.map */

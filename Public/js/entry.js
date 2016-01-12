@@ -1,6 +1,7 @@
 //App
 require( '.\/app.js');
 //Directive
+require( '.\/directives.js');
 
 //Controllers
 require( '.\/controllers/homeCtrl.js');

@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = '';
+/******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -47,15 +47,16 @@
 	//App
 	__webpack_require__( 1);
 	//Directive
+	__webpack_require__( 2);
 
 	//Controllers
-	__webpack_require__( 2);
 	__webpack_require__( 3);
+	__webpack_require__( 4);
 	//End Of Controllers
 
 	//Services
-	__webpack_require__( 4);
 	__webpack_require__( 5);
+	__webpack_require__( 6);
 	//End Services
 
 	//Factories
@@ -63,12 +64,18 @@
 
 	//Addons
 
+	//NOTES:
+	//		To add on more files to bundle just follow the format above
+	//		Webpack Commands:
+	//			To bundle files (from CollegeTester Dir): webpack
+	//				Thats it.
+
 /***/ },
 /* 1 */
 /***/ function(module, exports) {
 
 	angular.module('testerApp', ['ui.router', 'ui.grid', 'ngAnimate', 'ngAria', 'ngMaterial'])
-	.config(['$urlRouterProvider', '$stateProvider', '$mdThemingProvider', function($urlRouterProvider, $stateProvider, $mdThemingProvider) {
+	.config(['$urlRouterProvider', '$stateProvider', '$mdThemingProvider', function ($urlRouterProvider, $stateProvider, $mdThemingProvider) {
 		$stateProvider
 		.state('home', {
 			url: '/home',
@@ -85,10 +92,22 @@
 	//	 	templateUrl: 'templates/studentTmpl.html',
 	//	 	controller: 'studentCtrl'
 	// })
-}]);
+	}]);
+
 
 /***/ },
 /* 2 */
+/***/ function(module, exports) {
+
+	angular.module("testerApp")
+	.directive("mainHeader", function() {
+		return {
+			templateUrl: "./templates/mainHeaderTmpl.html"				 
+		};			 
+	})
+
+/***/ },
+/* 3 */
 /***/ function(module, exports) {
 
 	angular.module('testerApp')
@@ -97,7 +116,7 @@
 	})
 
 /***/ },
-/* 3 */
+/* 4 */
 /***/ function(module, exports) {
 
 	angular.module('testerApp')
@@ -106,7 +125,7 @@
 	})
 
 /***/ },
-/* 4 */
+/* 5 */
 /***/ function(module, exports) {
 
 	angular.module('testerApp')
@@ -116,7 +135,7 @@
 
 
 /***/ },
-/* 5 */
+/* 6 */
 /***/ function(module, exports) {
 
 	angular.module('testerApp')
