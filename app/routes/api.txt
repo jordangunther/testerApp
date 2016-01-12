@@ -1,0 +1,67 @@
+Endpoints:
+  baseURL: /api
+  teachers: /api/teachers
+    Returns a complete list of teachers with some basic information in the same
+    school. Only accessible by (teachers from the same school)? and admins.
+
+  teacher: /api/teachers/[:teacherId]
+    Returns basic information on specific teacher. Only accessible by
+    (teachers from the same school)? and admins.
+
+  courses: /api/courses
+    Returns a list of courses along with basic information about those courses
+    for a specific school. Accessible by teachers, students, and admins from
+    that school.
+
+  course: /api/courses/[:courseId]
+    Returns basic information on specific course. Accessible by students,
+    teachers, and admins from that school.
+
+  students: /api/students
+    Returns a list of students and their basic information for the specific
+    teacher querying, or a complete list of students in the school for an admin.
+    Not accessible by students.
+
+  student: /api/students/[:studentId]
+    Returns basic information on a specific student. Accessible only by that
+    student, a teacher over that student, or an admin for the school.
+
+  student's scores: /api/students/[:studentId]/scores
+    Returns basic information about scores on tests for that student's courses
+    and whether they've been completed/attempted or not. Accessible only by
+    that student's teacher or a school admin.
+
+  student's specific test result: /api/students/[:studentId]/[:testId]
+    Returns specific information on student's completion status of test.
+    Accessible only by the student's teacher or school admin.
+
+  tests: /api/tests/
+    Returns basic information about all tests for the school for admins, tests
+    for their own courses for teachers and students.
+
+  test: /api/tests/[:testId]
+    Returns basic information about a specific test. Accessible by students in
+    that course, teachers of that course, and school admins.
+
+  test for a student: /api/tests/[:testId]/[:studentId]/[1,2,3,4...]
+    Returns a randomized question for that student as part of that test-taking
+    session. Accessible only by the student when at their specific test-taking
+    URL for that specific course. Teachers and Admins will be able to view the
+    completed test at the student's specific endpoint above.
+
+  school: /api/schools/[:schoolId]
+    Returns basic school information for a specific school including school
+    name, location, description, teachers' names, and courses offered.
+    Accessible by _literally_ anyone. No Authentication, no nothing.
+
+  schoolAdmin: /api/schools/[:schoolId]/admin
+    Returns detailed information for a specific school, including teacher,
+    course, and student ids. Accessible only by school admins.
+
+  certificate: /api/cert/[:courseId]/
+    Returns the location of the blank certificate on the server and the
+    studentIds of those who have received the certificate. Accessible only by
+    school admins.
+
+  avalanche: /api/avalanche/
+    Returns something cool.
