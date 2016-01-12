@@ -1,0 +1,4 @@
+Endpoints:
+  baseURL: /api
+  teachers: /api/teacher
+  
