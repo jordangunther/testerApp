@@ -1,4 +1,4 @@
-angular.module('testerApp', ['ui.router', 'ui.grid', 'ngAnimate', 'ngAria', 'ngMaterial'])
+angular.module('testerApp', ['ui.router','ui.grid', 'ngAnimate', 'ngAria', 'ngMaterial'])
 .config(['$urlRouterProvider', '$stateProvider', '$mdThemingProvider', function ($urlRouterProvider, $stateProvider, $mdThemingProvider) {
 	$stateProvider
 	.state('home', {
@@ -10,6 +10,11 @@ angular.module('testerApp', ['ui.router', 'ui.grid', 'ngAnimate', 'ngAria', 'ngM
 		url: '/teacherLogin',
 		templateUrl: 'templates/teacherLoginTmpl.html',
 		controller: 'teacherLoginCtrl'
+	})
+	.state('teacherRequest', {
+		url: '/teacherRequest',
+		templateUrl: 'templates/teacherRequestTmpl.html',
+		controller: 'teacherRequestCtrl'
 	});
 // .state('student', {
 //	 	url: '/student/:studentId',

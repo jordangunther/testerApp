@@ -8,3 +8,14 @@ div {
   padding: 0; }
 
 /*# sourceMappingURL=style.css.map */
+
+.container {
+	width: 100%;
+	margin-left: 40%;
+	
+}
+.squareButton {
+	margin-top: 20%;
+	margin-bottom: 20%;
+	width: 200px;
+}
