@@ -2,8 +2,4 @@ node_modules
 bower/
 .sass-cache
 ./Public/.sass-cache
-<<<<<<< HEAD
 *.css.map
-=======
-*.css.map
->>>>>>> origin/gabe
