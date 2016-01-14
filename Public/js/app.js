@@ -1,6 +1,7 @@
 angular.module('testerApp', ['ui.router','ui.grid', 'ngAnimate', 'ngAria', 'ngMaterial'])
 .config(['$urlRouterProvider', '$stateProvider', '$mdThemingProvider', function ($urlRouterProvider, $stateProvider, $mdThemingProvider) {
-	$stateProvider
+	$urlRouterProvider.otherwise('/home');
+    $stateProvider
 	.state('home', {
 		url: '/home',
 		templateUrl: 'templates/homeTmpl.html',
@@ -15,10 +16,15 @@ angular.module('testerApp', ['ui.router','ui.grid', 'ngAnimate', 'ngAria', 'ngMa
 		url: '/teacherRequest',
 		templateUrl: 'templates/teacherRequestTmpl.html',
 		controller: 'teacherRequestCtrl'
-	});
-// .state('student', {
-//	 	url: '/student/:studentId',
-//	 	templateUrl: 'templates/studentTmpl.html',
-//	 	controller: 'studentCtrl'
-// })
+	})
+    .state('studentLogin', {
+        url: '/studentLogin',
+        templateUrl: 'templates/studentLoginTmpl.html',
+        controller: 'studentLoginCtrl'
+    });
+    // .state('student', {
+	//  	url: '/student/:studentId',
+	//  	templateUrl: 'templates/studentTmpl.html',
+	//  	controller: 'studentCtrl'
+    // });
 }]);
