@@ -45,6 +45,7 @@ Student
       dateTaken - date
       timeTaken (length) - string?date?num?
       certificateId - number
+      fileReference - string
   teacher - arr of obj
     teacherId - num
     teacherName - string
@@ -52,6 +53,7 @@ Student
 Test
   testId - num
   testName - string
+  description - string
   questions - arr of objs
     questionContent - string
     answerChoices - arr of strings
@@ -63,6 +65,8 @@ Test
 School
   schoolId - num
   schoolName - string
+  schoolLocation - string
+  schoolDescription - string
   teachers - arr of objs
     teacherId - num
     teacherName - string
