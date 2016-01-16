@@ -17,11 +17,37 @@ angular.module('testerApp', ['ui.router','ui.grid', 'ngAnimate', 'ngAria', 'ngMa
 		templateUrl: 'templates/teacherRequestTmpl.html',
 		controller: 'teacherRequestCtrl'
 	})
-    .state('studentLogin', {
-        url: '/studentLogin',
-        templateUrl: 'templates/studentLoginTmpl.html',
-        controller: 'studentLoginCtrl'
+    .state('studentInfo', {
+        url: '/studentInfo',
+        templateUrl: 'templates/studentInfoTmpl.html',
+        controller: 'studentInfoCtrl'
+    })
+        .state('classInfo', {
+        url: '/classInfo',
+        templateUrl: 'templates/classInfoTmpl.html',
+        controller: 'classInfoCtrl'
     });
+    $mdThemingProvider.theme('default')
+	 .dark()
+	.accentPalette('blue', {
+		'default': '500',
+		'hue-1': '300',
+		'hue-1': '200',
+		'hue-1': '50',
+
+	})
+	.primaryPalette('green', {
+		'default': '500',
+		'hue-1': '300',
+		'hue-1': '200',
+		'hue-1': '50',
+	})
+	.warnPalette('red', {
+		'default': '500',
+		'hue-1': '300',
+		'hue-1': '200',
+		'hue-1': '50',
+	});
     // .state('student', {
 	//  	url: '/student/:studentId',
 	//  	templateUrl: 'templates/studentTmpl.html',
