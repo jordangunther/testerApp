@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = '';
+/******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -63,13 +63,20 @@
 
 	//Addons
 
+	//NOTES:
+	//		To add on more files to bundle just follow the format above
+	//		Webpack Commands:
+	//			To bundle files (from CollegeTester Dir): webpack
+	//				Thats it.
+
 /***/ },
 /* 1 */
 /***/ function(module, exports) {
 
-	angular.module('testerApp', ['ui.router', 'ngAnimate', 'ngAria', 'ngMaterial'])
-	.config(['$urlRouterProvider', '$stateProvider', '$mdThemingProvider', function($urlRouterProvider, $stateProvider, $mdThemingProvider) {
-		$stateProvider
+	angular.module('testerApp', ['ui.router','ui.grid', 'ngAnimate', 'ngAria', 'ngMaterial'])
+	.config(['$urlRouterProvider', '$stateProvider', '$mdThemingProvider', function ($urlRouterProvider, $stateProvider, $mdThemingProvider) {
+		$urlRouterProvider.otherwise('/home');
+	    $stateProvider
 		.state('home', {
 			url: '/home',
 			templateUrl: 'templates/homeTmpl.html',
@@ -81,26 +88,22 @@
 			controller: 'teacherLoginCtrl'
 		})
 		.state('teacherRequest', {
- 		url: '/teacherRequest',
- 		templateUrl: 'templates/teacherRequestTmpl.html',
- 		controller: 'teacherRequestCtrl'
- 		})
- 		.state('classInfo', {
- 		url: '/classInfo',
- 		templateUrl: 'templates/classInfoTmpl.html',
- 		controller: 'classInfoCtrl'
- 		})
- 		.state('studentInfo', {
- 		url: '/studentInfo',
- 		templateUrl: 'templates/studentInfoTmpl.html',
- 		controller: 'studentInfoCtrl'
- 		});
-	// .state('student', {
-	//	 	url: '/student/:studentId',
-	//	 	templateUrl: 'templates/studentTmpl.html',
-	//	 	controller: 'studentCtrl'
-	// })
-}]);
+			url: '/teacherRequest',
+			templateUrl: 'templates/teacherRequestTmpl.html',
+			controller: 'teacherRequestCtrl'
+		})
+	    .state('studentLogin', {
+	        url: '/studentLogin',
+	        templateUrl: 'templates/studentLoginTmpl.html',
+	        controller: 'studentLoginCtrl'
+	    });
+	    // .state('student', {
+		//  	url: '/student/:studentId',
+		//  	templateUrl: 'templates/studentTmpl.html',
+		//  	controller: 'studentCtrl'
+	    // });
+	}]);
+
 
 /***/ },
 /* 2 */
@@ -117,25 +120,6 @@
 
 	angular.module('testerApp')
 	.controller('teacherLoginCtrl', function($scope, teacherLoginService){
-
-	})
-
-
-	angular.module('testerApp')
-	.controller('teacherRequestCtrl', function($scope, teacherRequestService) {
-
-
-	})
-
-	angular.module('testerApp')
-	.controller('classInfoCtrl', function($scope, teacherRequestService) {
-
-
-	})
-
-	angular.module('testerApp')
-	.controller('studentInfoCtrl', function($scope, teacherRequestService) {
-
 
 	})
 
@@ -158,11 +142,6 @@
 
 	})
 
-	angular.module('testerApp')
-	.service('teacherRequestService', function(){
-
-	})
 
 /***/ }
 /******/ ]);
-
