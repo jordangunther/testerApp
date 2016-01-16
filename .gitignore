@@ -3,3 +3,4 @@ bower/
 .sass-cache
 ./Public/.sass-cache
 *.css.map
+.DS_Store
