@@ -52,11 +52,12 @@
 	//Controllers
 	__webpack_require__( 3);
 	__webpack_require__( 4);
+	__webpack_require__( 5);
 	//End Of Controllers
 
 	//Services
-	__webpack_require__( 5);
 	__webpack_require__( 6);
+	__webpack_require__( 7);
 	//End Services
 
 	//Factories
@@ -69,6 +70,7 @@
 	//		Webpack Commands:
 	//			To bundle files (from CollegeTester Dir): webpack
 	//				Thats it.
+	//				You can also use webpack to minify with: webpack -p
 
 /***/ },
 /* 1 */
@@ -128,6 +130,18 @@
 /* 5 */
 /***/ function(module, exports) {
 
+	angular.module("testerApp")
+	.controller("headerCtrl", ["$scope", function($scope) {
+		
+		$scope.headerMainText = "Welcome to College Tester";
+		$scope.headerSubText;
+		$scope.headerRightText;
+	}])
+
+/***/ },
+/* 6 */
+/***/ function(module, exports) {
+
 	angular.module('testerApp')
 	.service('homeService', function($q){
 
@@ -135,7 +149,7 @@
 
 
 /***/ },
-/* 6 */
+/* 7 */
 /***/ function(module, exports) {
 
 	angular.module('testerApp')

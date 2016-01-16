@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app='testerApp'>
+<html data-ng-app="testerApp">
 <head>
 	<link rel="stylesheet" type="text/css" href="bower/angular-material/angular-material.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/3.0.7/ui-grid.css">
@@ -8,7 +8,7 @@
 	<title>testerApp</title>
 </head>
 <body>
-	<main-header></main-header>
+	<main-header ng-controller="headerCtrl"></main-header>
 	<div ui-view></div>
 	<!-- Angular -->
 	<script src="bower/angular/angular.js"></script>

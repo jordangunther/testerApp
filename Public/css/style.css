@@ -12,10 +12,10 @@ body {
 
 .main-header {
   width: 100vw;
-  min-height: 60px;
+  min-height: 65px;
   max-height: 15vh;
   background-color: darkgray;
-  position: fixed;
+  position: relative;
   top: 0; }
   .main-header--content {
     width: 90%;
@@ -41,5 +41,26 @@ body {
         margin: 10% 0 0 0;
         position: relative;
         left: 25%; }
+
+.lower-header {
+  height: 40px;
+  width: 100vw;
+  background-color: lightgray;
+  position: relative; }
+  .lower-header .flex-wrapper {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px; }
+    .lower-header .flex-wrapper .lower-header--backbtn .header-back-btn {
+      width: 50px;
+      height: 50px; }
+    .lower-header .flex-wrapper .lower-header--maintext .subtext {
+      font-style: italic;
+      font-size: 80%;
+      color: gray; }
 
 /*# sourceMappingURL=style.css.map */
