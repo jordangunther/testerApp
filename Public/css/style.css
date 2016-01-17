@@ -7,6 +7,62 @@ div {
   margin: 0;
   padding: 0; }
 
+body {
+  overflow: hidden; }
+
+.main-header {
+  width: 100vw;
+  min-height: 65px;
+  max-height: 15vh;
+  background-color: darkgray;
+  position: relative;
+  top: 0; }
+  .main-header--content {
+    width: 90%;
+    margin: 0 auto; }
+    .main-header--content h1 {
+      font-size: 2em;
+      display: inline-block;
+      color: #404040; }
+      .main-header--content h1:nth-child(2) {
+        color: orange; }
+    .main-header--content .expand-button {
+      width: 90px;
+      height: 40px;
+      float: right;
+      border: 3px solid lightgray;
+      color: gray;
+      margin: 2vh 0 0 0;
+      transition: all 0.2s ease-in-out;
+      border-radius: 5%; }
+      .main-header--content .expand-button:hover {
+        background-color: rgba(255, 255, 255, 0.3); }
+      .main-header--content .expand-button p {
+        margin: 10% 0 0 0;
+        position: relative;
+        left: 25%; }
+
+.lower-header {
+  height: 40px;
+  width: 100vw;
+  background-color: lightgray;
+  position: relative; }
+  .lower-header .flex-wrapper {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px; }
+    .lower-header .flex-wrapper .lower-header--backbtn .header-back-btn {
+      width: 50px;
+      height: 50px; }
+    .lower-header .flex-wrapper .lower-header--maintext .subtext {
+      font-style: italic;
+      font-size: 80%;
+      color: gray; }
+
 /*# sourceMappingURL=style.css.map */
 
 .container {

@@ -21,6 +21,11 @@ $ webpack
 This will export to to ./Public/js/bundle.js
 
 Make sure to run it from the main directory where webpack.config.js is located.
+
+You can also use webpack to minify with:
+```sh
+$ webpack -p
+```
 ### SASS
 First install SASS with Ruby
 

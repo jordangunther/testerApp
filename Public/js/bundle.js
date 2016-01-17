@@ -47,15 +47,17 @@
 	//App
 	__webpack_require__( 1);
 	//Directive
+	__webpack_require__( 2);
 
 	//Controllers
-	__webpack_require__( 2);
 	__webpack_require__( 3);
+	__webpack_require__( 4);
+	__webpack_require__( 5);
 	//End Of Controllers
 
 	//Services
-	__webpack_require__( 4);
-	__webpack_require__( 5);
+	__webpack_require__( 6);
+	__webpack_require__( 7);
 	//End Services
 
 	//Factories
@@ -68,15 +70,25 @@
 	//		Webpack Commands:
 	//			To bundle files (from CollegeTester Dir): webpack
 	//				Thats it.
+<<<<<<< HEAD
+	//				You can also use webpack to minify with: webpack -p
+=======
+>>>>>>> master
 
 /***/ },
 /* 1 */
 /***/ function(module, exports) {
 
+<<<<<<< HEAD
+	angular.module('testerApp', ['ui.router', 'ui.grid', 'ngAnimate', 'ngAria', 'ngMaterial'])
+	.config(['$urlRouterProvider', '$stateProvider', '$mdThemingProvider', function ($urlRouterProvider, $stateProvider, $mdThemingProvider) {
+		$stateProvider
+=======
 	angular.module('testerApp', ['ui.router','ui.grid', 'ngAnimate', 'ngAria', 'ngMaterial'])
 	.config(['$urlRouterProvider', '$stateProvider', '$mdThemingProvider', function ($urlRouterProvider, $stateProvider, $mdThemingProvider) {
 		$urlRouterProvider.otherwise('/home');
 	    $stateProvider
+>>>>>>> master
 		.state('home', {
 			url: '/home',
 			templateUrl: 'templates/homeTmpl.html',
@@ -86,6 +98,14 @@
 			url: '/teacherLogin',
 			templateUrl: 'templates/teacherLoginTmpl.html',
 			controller: 'teacherLoginCtrl'
+<<<<<<< HEAD
+		});
+	// .state('student', {
+	//	 	url: '/student/:studentId',
+	//	 	templateUrl: 'templates/studentTmpl.html',
+	//	 	controller: 'studentCtrl'
+	// })
+=======
 		})
 		.state('teacherRequest', {
 			url: '/teacherRequest',
@@ -102,11 +122,23 @@
 		//  	templateUrl: 'templates/studentTmpl.html',
 		//  	controller: 'studentCtrl'
 	    // });
+>>>>>>> master
 	}]);
 
 
 /***/ },
 /* 2 */
+/***/ function(module, exports) {
+
+	angular.module("testerApp")
+	.directive("mainHeader", function() {
+		return {
+			templateUrl: "./templates/mainHeaderTmpl.html"				 
+		};			 
+	})
+
+/***/ },
+/* 3 */
 /***/ function(module, exports) {
 
 	angular.module('testerApp')
@@ -115,7 +147,7 @@
 	})
 
 /***/ },
-/* 3 */
+/* 4 */
 /***/ function(module, exports) {
 
 	angular.module('testerApp')
@@ -124,7 +156,19 @@
 	})
 
 /***/ },
-/* 4 */
+/* 5 */
+/***/ function(module, exports) {
+
+	angular.module("testerApp")
+	.controller("headerCtrl", ["$scope", function($scope) {
+		
+		$scope.headerMainText = "Welcome to College Tester";
+		$scope.headerSubText;
+		$scope.headerRightText;
+	}])
+
+/***/ },
+/* 6 */
 /***/ function(module, exports) {
 
 	angular.module('testerApp')
@@ -134,7 +178,7 @@
 
 
 /***/ },
-/* 5 */
+/* 7 */
 /***/ function(module, exports) {
 
 	angular.module('testerApp')
