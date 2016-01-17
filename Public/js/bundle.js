@@ -70,15 +70,25 @@
 	//		Webpack Commands:
 	//			To bundle files (from CollegeTester Dir): webpack
 	//				Thats it.
+<<<<<<< HEAD
 	//				You can also use webpack to minify with: webpack -p
+=======
+>>>>>>> master
 
 /***/ },
 /* 1 */
 /***/ function(module, exports) {
 
+<<<<<<< HEAD
 	angular.module('testerApp', ['ui.router', 'ui.grid', 'ngAnimate', 'ngAria', 'ngMaterial'])
 	.config(['$urlRouterProvider', '$stateProvider', '$mdThemingProvider', function ($urlRouterProvider, $stateProvider, $mdThemingProvider) {
 		$stateProvider
+=======
+	angular.module('testerApp', ['ui.router','ui.grid', 'ngAnimate', 'ngAria', 'ngMaterial'])
+	.config(['$urlRouterProvider', '$stateProvider', '$mdThemingProvider', function ($urlRouterProvider, $stateProvider, $mdThemingProvider) {
+		$urlRouterProvider.otherwise('/home');
+	    $stateProvider
+>>>>>>> master
 		.state('home', {
 			url: '/home',
 			templateUrl: 'templates/homeTmpl.html',
@@ -88,12 +98,31 @@
 			url: '/teacherLogin',
 			templateUrl: 'templates/teacherLoginTmpl.html',
 			controller: 'teacherLoginCtrl'
+<<<<<<< HEAD
 		});
 	// .state('student', {
 	//	 	url: '/student/:studentId',
 	//	 	templateUrl: 'templates/studentTmpl.html',
 	//	 	controller: 'studentCtrl'
 	// })
+=======
+		})
+		.state('teacherRequest', {
+			url: '/teacherRequest',
+			templateUrl: 'templates/teacherRequestTmpl.html',
+			controller: 'teacherRequestCtrl'
+		})
+	    .state('studentLogin', {
+	        url: '/studentLogin',
+	        templateUrl: 'templates/studentLoginTmpl.html',
+	        controller: 'studentLoginCtrl'
+	    });
+	    // .state('student', {
+		//  	url: '/student/:studentId',
+		//  	templateUrl: 'templates/studentTmpl.html',
+		//  	controller: 'studentCtrl'
+	    // });
+>>>>>>> master
 	}]);
 
 
