@@ -1,14 +1,19 @@
 //App
 require( '.\/app.js');
 //Directive
+require( '.\/directives.js');
 
 //Controllers
 require( '.\/controllers/homeCtrl.js');
 require( '.\/controllers/teacherLoginCtrl.js');
+<<<<<<< HEAD
 require( '.\/controllers/teacherRequestCtrl.js');
 require( '.\/controllers/studentInfoCtrl.js');
 require( '.\/controllers/studentLoginCtrl.js');
 require( '.\/controllers/classInfoCtrl.js');
+=======
+require( '.\/controllers/headerCtrl.js');
+>>>>>>> master
 //End Of Controllers
 
 //Services
@@ -31,3 +36,4 @@ require( '.\/services/classInfoService.js');
 //		Webpack Commands:
 //			To bundle files (from CollegeTester Dir): webpack
 //				Thats it.
+//				You can also use webpack to minify with: webpack -p

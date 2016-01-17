@@ -19,6 +19,10 @@
     "angular": "~1.4.8",
     "angular-material": "~1.0.1",
     "angular-ui-router": "~0.2.15",
+<<<<<<< HEAD
     "angular-ui-grid": "ui-grid#~3.0.7"
+=======
+    "angular-ui-grid": "~3.0.7"
+>>>>>>> master
   }
 }
