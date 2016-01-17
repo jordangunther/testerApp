@@ -53,26 +53,20 @@
 	__webpack_require__( 3);
 	__webpack_require__( 4);
 	__webpack_require__( 5);
-<<<<<<< HEAD
 	__webpack_require__( 6);
 	__webpack_require__( 7);
+	__webpack_require__( 8);
+	__webpack_require__( 9);
 	//End Of Controllers
 
 	//Services
-	__webpack_require__( 8);
-	__webpack_require__( 9);
 	__webpack_require__( 10);
 	__webpack_require__( 11);
 	__webpack_require__( 12);
 	__webpack_require__( 13);
+	__webpack_require__( 14);
+	__webpack_require__( 15);
 
-=======
-	//End Of Controllers
-
-	//Services
-	__webpack_require__( 6);
-	__webpack_require__( 7);
->>>>>>> master
 	//End Services
 
 	//Factories
@@ -85,34 +79,16 @@
 	//		Webpack Commands:
 	//			To bundle files (from CollegeTester Dir): webpack
 	//				Thats it.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 	//				You can also use webpack to minify with: webpack -p
-=======
->>>>>>> master
->>>>>>> master
 
 /***/ },
 /* 1 */
 /***/ function(module, exports) {
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-	angular.module('testerApp', ['ui.router', 'ui.grid', 'ngAnimate', 'ngAria', 'ngMaterial'])
-	.config(['$urlRouterProvider', '$stateProvider', '$mdThemingProvider', function ($urlRouterProvider, $stateProvider, $mdThemingProvider) {
-		$stateProvider
-=======
->>>>>>> master
 	angular.module('testerApp', ['ui.router','ui.grid', 'ngAnimate', 'ngAria', 'ngMaterial'])
 	.config(['$urlRouterProvider', '$stateProvider', '$mdThemingProvider', function ($urlRouterProvider, $stateProvider, $mdThemingProvider) {
 		$urlRouterProvider.otherwise('/home');
 	    $stateProvider
-<<<<<<< HEAD
-=======
->>>>>>> master
->>>>>>> master
 		.state('home', {
 			url: '/home',
 			templateUrl: 'templates/homeTmpl.html',
@@ -122,24 +98,12 @@
 			url: '/teacherLogin',
 			templateUrl: 'templates/teacherLoginTmpl.html',
 			controller: 'teacherLoginCtrl'
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-		});
-	// .state('student', {
-	//	 	url: '/student/:studentId',
-	//	 	templateUrl: 'templates/studentTmpl.html',
-	//	 	controller: 'studentCtrl'
-	// })
-=======
->>>>>>> master
 		})
 		.state('teacherRequest', {
 			url: '/teacherRequest',
 			templateUrl: 'templates/teacherRequestTmpl.html',
 			controller: 'teacherRequestCtrl'
 		})
-<<<<<<< HEAD
 	    .state('studentInfo', {
 	        url: '/studentInfo',
 	        templateUrl: 'templates/studentInfoTmpl.html',
@@ -171,22 +135,11 @@
 			'hue-1': '200',
 			'hue-1': '50',
 		});
-=======
-	    .state('studentLogin', {
-	        url: '/studentLogin',
-	        templateUrl: 'templates/studentLoginTmpl.html',
-	        controller: 'studentLoginCtrl'
-	    });
->>>>>>> master
 	    // .state('student', {
 		//  	url: '/student/:studentId',
 		//  	templateUrl: 'templates/studentTmpl.html',
 		//  	controller: 'studentCtrl'
 	    // });
-<<<<<<< HEAD
-=======
->>>>>>> master
->>>>>>> master
 	}]);
 
 
@@ -215,32 +168,27 @@
 /***/ function(module, exports) {
 
 	angular.module('testerApp')
-<<<<<<< HEAD
-	.controller('teacherRequestCtrl', function($scope, teacherRequestService) {
+	.controller('teacherLoginCtrl', function($scope, teacherLoginService){
 
-
-	});
+	})
 
 /***/ },
 /* 5 */
 /***/ function(module, exports) {
 
 	angular.module('testerApp')
-	.controller('studentInfoCtrl', function($scope, teacherRequestService) {
+	.controller('teacherRequestCtrl', function($scope, teacherRequestService) {
 
-=======
-	.controller('teacherLoginCtrl', function($scope, teacherLoginService){
->>>>>>> master
 
-	})
+	});
 
 /***/ },
-<<<<<<< HEAD
 /* 6 */
 /***/ function(module, exports) {
 
 	angular.module('testerApp')
-	.controller('studentLoginCtrl', function($scope, studentLoginService){
+	.controller('studentInfoCtrl', function($scope, teacherRequestService) {
+
 
 	})
 
@@ -249,12 +197,23 @@
 /***/ function(module, exports) {
 
 	angular.module('testerApp')
+	.controller('studentLoginCtrl', function($scope, studentLoginService){
+
+	})
+
+/***/ },
+/* 8 */
+/***/ function(module, exports) {
+
+	angular.module('testerApp')
 	.controller('classInfoCtrl', function($scope, teacherRequestService) {
 
-=======
-/* 5 */
+
+	})
+
+/***/ },
+/* 9 */
 /***/ function(module, exports) {
->>>>>>> master
 
 	angular.module("testerApp")
 	.controller("headerCtrl", ["$scope", function($scope) {
@@ -265,11 +224,7 @@
 	}])
 
 /***/ },
-<<<<<<< HEAD
-/* 8 */
-=======
-/* 6 */
->>>>>>> master
+/* 10 */
 /***/ function(module, exports) {
 
 	angular.module('testerApp')
@@ -279,11 +234,7 @@
 
 
 /***/ },
-<<<<<<< HEAD
-/* 9 */
-=======
-/* 7 */
->>>>>>> master
+/* 11 */
 /***/ function(module, exports) {
 
 	angular.module('testerApp')
@@ -291,10 +242,9 @@
 
 	})
 
-<<<<<<< HEAD
 
 /***/ },
-/* 10 */
+/* 12 */
 /***/ function(module, exports) {
 
 	angular.module('testerApp')
@@ -303,7 +253,7 @@
 	});
 
 /***/ },
-/* 11 */
+/* 13 */
 /***/ function(module, exports) {
 
 	angular.module('testerApp')
@@ -312,7 +262,7 @@
 	});
 
 /***/ },
-/* 12 */
+/* 14 */
 /***/ function(module, exports) {
 
 	angular.module('testerApp')
@@ -321,7 +271,7 @@
 	})
 
 /***/ },
-/* 13 */
+/* 15 */
 /***/ function(module, exports) {
 
 	angular.module('testerApp')
@@ -329,8 +279,5 @@
 
 	});
 
-=======
-
->>>>>>> master
 /***/ }
 /******/ ]);

@@ -6,14 +6,11 @@ require( '.\/directives.js');
 //Controllers
 require( '.\/controllers/homeCtrl.js');
 require( '.\/controllers/teacherLoginCtrl.js');
-<<<<<<< HEAD
 require( '.\/controllers/teacherRequestCtrl.js');
 require( '.\/controllers/studentInfoCtrl.js');
 require( '.\/controllers/studentLoginCtrl.js');
 require( '.\/controllers/classInfoCtrl.js');
-=======
 require( '.\/controllers/headerCtrl.js');
->>>>>>> master
 //End Of Controllers
 
 //Services

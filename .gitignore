@@ -3,8 +3,4 @@ bower/
 .sass-cache
 ./Public/.sass-cache
 *.css.map
-<<<<<<< HEAD
 .DS_Store
-=======
-.DS_Store
->>>>>>> master
