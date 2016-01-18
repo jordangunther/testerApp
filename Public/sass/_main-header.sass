@@ -1,55 +1,57 @@
 .main-header
-	width: 100vw
-	min-height: 65px
-	max-height: 15vh
-	background-color: darkgray
-	position: relative
-	top: 0
-	&--content
-		width: 90%
-		margin: 0 auto
-		h1
-			font-size: 2em
-			display: inline-block
-			color: $black
-			&:nth-child(2)
-				color: orange
-		.expand-button
-			width: 90px
-			height: 40px
-			float: right
-			border: 3px solid lightgray
-			color: gray
-			margin: 2vh 0 0 0
-			transition: $transition
-			border-radius: 5%
-			&:hover
-				background-color: rgba(255, 255, 255, 0.30)
-			p
-				margin: 10% 0 0 0
-				position: relative
-				left: 25%
+  width: 100vw
+  min-height: 65px
+  max-height: 15vh
+  background-color: darkgray
+  position: relative
+  top: 0
+  &--content
+    width: 90%
+    margin: 0 auto
+    a
+      text-decoration: none
+    h1
+      font-size: 2em
+      display: inline-block
+      color: $black
+      &:nth-child(2)
+        color: orange
+    .expand-button
+      width: 90px
+      height: 40px
+      float: right
+      border: 3px solid lightgray
+      color: gray
+      margin: 2vh 0 0 0
+      transition: $transition
+      border-radius: 5%
+      &:hover
+        background-color: rgba(255, 255, 255, 0.30)
+      p
+        margin: 10% 0 0 0
+        position: relative
+        left: 25%
 .lower-header
-	height: 40px
-	width: 100vw
-	background-color: lightgray
-	position: relative
-	.flex-wrapper
-		display: flex
-		width: 90%
-		margin: 0 auto
-		flex-direction: row
-		justify-content: space-between
-		align-items: center
-		height: 40px
-		.lower-header
-			&--backbtn
-				.header-back-btn
-					width: 50px
-					height: 50px
-			&--maintext
-				h3
-				.subtext
-					font-style: italic
-					font-size: 80%
-					color: gray
+  height: 40px
+  width: 100vw
+  background-color: lightgray
+  position: relative
+  .flex-wrapper
+    display: flex
+    width: 90%
+    margin: 0 auto
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    height: 40px
+    .lower-header
+      &--backbtn
+        .header-back-btn
+          width: 50px
+          height: 50px
+      &--maintext
+        h3
+        .subtext
+          font-style: italic
+          font-size: 80%
+          color: gray
