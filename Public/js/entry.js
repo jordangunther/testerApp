@@ -10,7 +10,7 @@ require( '.\/controllers/teacherRequestCtrl.js');
 require( '.\/controllers/studentInfoCtrl.js');
 require( '.\/controllers/studentLoginCtrl.js');
 require( '.\/controllers/classInfoCtrl.js');
-require( '.\/controllers/headerCtrl.js');
+require( '.\/controllers/mainHeaderCtrl.js');
 //End Of Controllers
 
 //Services
