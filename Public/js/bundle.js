@@ -53,11 +53,20 @@
 	__webpack_require__( 3);
 	__webpack_require__( 4);
 	__webpack_require__( 5);
+	__webpack_require__( 6);
+	__webpack_require__( 7);
+	__webpack_require__( 8);
+	__webpack_require__( 9);
 	//End Of Controllers
 
 	//Services
-	__webpack_require__( 6);
-	__webpack_require__( 7);
+	__webpack_require__( 10);
+	__webpack_require__( 11);
+	__webpack_require__( 12);
+	__webpack_require__( 13);
+	__webpack_require__( 14);
+	__webpack_require__( 15);
+
 	//End Services
 
 	//Factories
@@ -76,9 +85,10 @@
 /* 1 */
 /***/ function(module, exports) {
 
-	angular.module('testerApp', ['ui.router', 'ui.grid', 'ngAnimate', 'ngAria', 'ngMaterial'])
+	angular.module('testerApp', ['ui.router','ui.grid', 'ngAnimate', 'ngAria', 'ngMaterial'])
 	.config(['$urlRouterProvider', '$stateProvider', '$mdThemingProvider', function ($urlRouterProvider, $stateProvider, $mdThemingProvider) {
-		$stateProvider
+		$urlRouterProvider.otherwise('/home');
+	    $stateProvider
 		.state('home', {
 			url: '/home',
 			templateUrl: 'templates/homeTmpl.html',
@@ -88,12 +98,48 @@
 			url: '/teacherLogin',
 			templateUrl: 'templates/teacherLoginTmpl.html',
 			controller: 'teacherLoginCtrl'
+		})
+		.state('teacherRequest', {
+			url: '/teacherRequest',
+			templateUrl: 'templates/teacherRequestTmpl.html',
+			controller: 'teacherRequestCtrl'
+		})
+	    .state('studentInfo', {
+	        url: '/studentInfo',
+	        templateUrl: 'templates/studentInfoTmpl.html',
+	        controller: 'studentInfoCtrl'
+	    })
+	        .state('classInfo', {
+	        url: '/classInfo',
+	        templateUrl: 'templates/classInfoTmpl.html',
+	        controller: 'classInfoCtrl'
+	    });
+	    $mdThemingProvider.theme('default')
+		 .dark()
+		.accentPalette('blue', {
+			'default': '500',
+			'hue-1': '300',
+			'hue-1': '200',
+			'hue-1': '50',
+
+		})
+		.primaryPalette('green', {
+			'default': '500',
+			'hue-1': '300',
+			'hue-1': '200',
+			'hue-1': '50',
+		})
+		.warnPalette('red', {
+			'default': '500',
+			'hue-1': '300',
+			'hue-1': '200',
+			'hue-1': '50',
 		});
-	// .state('student', {
-	//	 	url: '/student/:studentId',
-	//	 	templateUrl: 'templates/studentTmpl.html',
-	//	 	controller: 'studentCtrl'
-	// })
+	    // .state('student', {
+		//  	url: '/student/:studentId',
+		//  	templateUrl: 'templates/studentTmpl.html',
+		//  	controller: 'studentCtrl'
+	    // });
 	}]);
 
 
@@ -130,6 +176,45 @@
 /* 5 */
 /***/ function(module, exports) {
 
+	angular.module('testerApp')
+	.controller('teacherRequestCtrl', function($scope, teacherRequestService) {
+
+
+	});
+
+/***/ },
+/* 6 */
+/***/ function(module, exports) {
+
+	angular.module('testerApp')
+	.controller('studentInfoCtrl', function($scope, teacherRequestService) {
+
+
+	})
+
+/***/ },
+/* 7 */
+/***/ function(module, exports) {
+
+	angular.module('testerApp')
+	.controller('studentLoginCtrl', function($scope, studentLoginService){
+
+	})
+
+/***/ },
+/* 8 */
+/***/ function(module, exports) {
+
+	angular.module('testerApp')
+	.controller('classInfoCtrl', function($scope, teacherRequestService) {
+
+
+	})
+
+/***/ },
+/* 9 */
+/***/ function(module, exports) {
+
 	angular.module("testerApp")
 	.controller("headerCtrl", ["$scope", function($scope) {
 		
@@ -139,7 +224,7 @@
 	}])
 
 /***/ },
-/* 6 */
+/* 10 */
 /***/ function(module, exports) {
 
 	angular.module('testerApp')
@@ -149,7 +234,7 @@
 
 
 /***/ },
-/* 7 */
+/* 11 */
 /***/ function(module, exports) {
 
 	angular.module('testerApp')
@@ -157,6 +242,42 @@
 
 	})
 
+
+/***/ },
+/* 12 */
+/***/ function(module, exports) {
+
+	angular.module('testerApp')
+	.service('teacherRequestService', function(){
+
+	});
+
+/***/ },
+/* 13 */
+/***/ function(module, exports) {
+
+	angular.module('testerApp')
+	.service('studentInfoService', function(){
+
+	});
+
+/***/ },
+/* 14 */
+/***/ function(module, exports) {
+
+	angular.module('testerApp')
+	.service('studentLoginService', function($q){
+
+	})
+
+/***/ },
+/* 15 */
+/***/ function(module, exports) {
+
+	angular.module('testerApp')
+	.service('classInfoService', function(){
+
+	});
 
 /***/ }
 /******/ ]);
