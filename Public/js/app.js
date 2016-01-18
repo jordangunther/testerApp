@@ -16,7 +16,7 @@ angular.module('testerApp', ['ui.router','ui.grid', 'ngAnimate', 'ngAria', 'ngMa
 	.state('teacherRequest', {
 		url: '/teacherRequest',
 		templateUrl: 'templates/teacherRequestTmpl.html',
-		controller: 'teacherRequestCtl'
+		controller: 'teacherRequestCtrl'
 	})
 	.state('studentLogin', {
 		url: '/studentLogin',
