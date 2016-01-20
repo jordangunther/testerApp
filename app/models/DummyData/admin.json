@@ -1,0 +1,15 @@
+{
+    adminId: Number,
+    adminName: String,
+    customPasswordHash: String,
+    registrationDate: Date,
+    school: {
+        schoolId: Number,
+        schoolName: String
+    },
+    courses: [{
+        courseId: Number,
+        courseName: String
+    }]
+}
+              

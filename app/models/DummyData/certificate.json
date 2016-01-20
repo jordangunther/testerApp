@@ -1,0 +1,6 @@
+{
+    courseId: Number,
+    testId: Number,
+    fileReference: String,
+    issuedTo: Array
+}

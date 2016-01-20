@@ -7,7 +7,7 @@ var TestSchema = new Schema({
     questions: [{
         questionContent: String,
         answerChoices: Array,
-        correctAnswers: Array
+        correctAnswers: Number
     }],
     course: {
         courseId: Number,

@@ -1,0 +1,17 @@
+{
+    courseId: Number,
+    courseName: String,
+    teacher: {
+        teacherId: Number,
+        teacherName: String
+    },
+    students: Array,
+    test: [{
+        testId: Number,
+        testName: String
+    }],
+    school: {
+        schoolId: Number,
+        schoolName: String
+    }
+}

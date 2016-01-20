@@ -1,0 +1,19 @@
+{
+    schoolId: Number,
+    schoolName: String,
+    schoolLocation: String,
+    schoolDescription: String,
+    teachers: [{
+        teacherId: Number,
+        teacherName: String
+    }],
+    courses: [{
+        courseId: Number,
+        courseName: String
+    }],
+    students: Array,
+    admins: [{
+        adminId: Number,
+        adminName: String
+    }]
+}

@@ -1,0 +1,8 @@
+{
+    courseId: Number,
+    courseName: String,
+    filepath: String,
+    teacherId: Number,
+    teacherName: String,
+    uploadedDate: Date
+}

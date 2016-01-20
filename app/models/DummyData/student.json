@@ -1,0 +1,154 @@
+{
+    [
+        {
+            studentId: 0,
+            studentFirstName: 'Jordan',
+            studentLastName: 'Gunther',
+            studentDOB: 'Tue Jan 19 2016 18:40:27 GMT-0700 (MST)',
+            assignedPassword: 'JorGun',
+            teacher: {
+                teacherId: 0,
+                teacherName: 'Stephen Taylor'
+            },
+            courses: [{
+                courseId: 0,
+                courseName: 'History of FFVII',
+                tests: [{
+                    testId: 0,
+                    testName: 'The Rise of Sephiroth',
+                    completed: false,
+                    grade: 0,
+                    pass: false,
+                    answers: [0, 3, 2, 1, 0],
+                    dateTaken: 'Tue Jan 19 2016 18:40:27 GMT-0700 (MST)',
+                    timeTaken: 4.32,
+                    certificateId: 0
+                }]
+            }],
+            school: {
+                schoolId: 0,
+                schoolName: 'Cool School'
+            }
+        },
+        {
+            studentId: 1,
+            studentFirstName: 'Scott',
+            studentLastName: 'Ogden',
+            studentDOB: 'Tue Jan 19 2016 18:40:27 GMT-0700 (MST)',
+            assignedPassword: 'ScoOgd',
+            teacher: {
+                teacherId: 0,
+                teacherName: 'Stephen Taylor'
+            },
+            courses: [{
+                courseId: Number,
+                courseName: String,
+                tests: [{
+                    testId: Number,
+                    testName: String,
+                    completed: Boolean,
+                    grade: Number,
+                    pass: Boolean,
+                    answers: Array,
+                    dateTaken: Date,
+                    timeTaken: String,
+                    certificateId: Number
+                }]
+            }],
+            school: {
+                schoolId: Number,
+                schoolName: String
+            }
+        },
+        {
+            studentId: 2,
+            studentFirstName: String,
+            studentLastName: String,
+            studentDOB: 'Tue Jan 19 2016 18:40:27 GMT-0700 (MST)',
+            assignedPassword: String,
+            teacher: {
+                teacherId: Number,
+                teacherName: String
+            },
+            courses: [{
+                courseId: Number,
+                courseName: String,
+                tests: [{
+                    testId: Number,
+                    testName: String,
+                    completed: Boolean,
+                    grade: Number,
+                    pass: Boolean,
+                    answers: Array,
+                    dateTaken: Date,
+                    timeTaken: String,
+                    certificateId: Number
+                }]
+            }],
+            school: {
+                schoolId: Number,
+                schoolName: String
+            }
+        },
+        {
+            studentId: 3,
+            studentFirstName: String,
+            studentLastName: String,
+            studentDOB: 'Tue Jan 19 2016 18:40:27 GMT-0700 (MST)',
+            assignedPassword: String,
+            teacher: {
+                teacherId: Number,
+                teacherName: String
+            },
+            courses: [{
+                courseId: Number,
+                courseName: String,
+                tests: [{
+                    testId: Number,
+                    testName: String,
+                    completed: Boolean,
+                    grade: Number,
+                    pass: Boolean,
+                    answers: Array,
+                    dateTaken: Date,
+                    timeTaken: String,
+                    certificateId: Number
+                }]
+            }],
+            school: {
+                schoolId: Number,
+                schoolName: String
+            }
+        },
+        {
+            studentId: 4,
+            studentFirstName: String,
+            studentLastName: String,
+            studentDOB: 'Tue Jan 19 2016 18:40:27 GMT-0700 (MST)',
+            assignedPassword: String,
+            teacher: {
+                teacherId: Number,
+                teacherName: String
+            },
+            courses: [{
+                courseId: Number,
+                courseName: String,
+                tests: [{
+                    testId: Number,
+                    testName: String,
+                    completed: Boolean,
+                    grade: Number,
+                    pass: Boolean,
+                    answers: Array,
+                    dateTaken: Date,
+                    timeTaken: String,
+                    certificateId: Number
+                }]
+            }],
+            school: {
+                schoolId: Number,
+                schoolName: String
+            }
+        }
+    ]
+}
