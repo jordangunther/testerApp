@@ -55,6 +55,6 @@ This is exporting to ./Public/css
 ##### SASS Rules
 SASS is dependant entirely on indentation so..
 
-Keep SASS happy buy using TAB(size = 2) not SPACES
+Keep SASS happy by using TAB(size = 2) not SPACES
 
 SASS recognizes _filename.sass template files as filename.sass, so just add @import and you're good.
