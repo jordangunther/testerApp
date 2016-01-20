@@ -32,6 +32,7 @@ angular.module('testerApp', ['ui.router','ui.grid', 'ngAnimate', 'ngAria', 'ngMa
 		url: '/classInfo',
 		templateUrl: 'templates/classInfoTmpl.html',
 		controller: 'classInfoCtrl'
+<<<<<<< HEAD
 	})
     .state('studentCourseSel', {
         url: '/studentCourseSel',
@@ -43,6 +44,9 @@ angular.module('testerApp', ['ui.router','ui.grid', 'ngAnimate', 'ngAria', 'ngMa
         templateUrl: 'templates/courseOverview.html',
         controller: 'courseOverviewCtrl'
     });
+=======
+	});
+>>>>>>> master
 //		.state('student', {
 //				url: '/student/:studentId',
 //				templateUrl: 'templates/studentTmpl.html',

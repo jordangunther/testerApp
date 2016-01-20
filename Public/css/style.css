@@ -67,8 +67,12 @@ body {
 
 .mainLayout {
   width: 100%;
+<<<<<<< HEAD
   min-height: 580px;
   max-height: 800px;
+=======
+  height: 100%;
+>>>>>>> master
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
