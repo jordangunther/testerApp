@@ -11,11 +11,10 @@ require( '.\/controllers/studentInfoCtrl.js');
 require( '.\/controllers/studentLoginCtrl.js');
 require( '.\/controllers/classInfoCtrl.js');
 require( '.\/controllers/mainHeaderCtrl.js');
-<<<<<<< HEAD
+
 require( '.\/controllers/studentCourseSelCtrl.js');
 require( '.\/controllers/courseOverviewCtrl.js');
-=======
->>>>>>> master
+
 //End Of Controllers
 
 //Services
@@ -25,11 +24,10 @@ require( '.\/services/teacherRequestService.js');
 require( '.\/services/studentInfoService.js');
 require( '.\/services/studentLoginService.js');
 require( '.\/services/classInfoService.js');
-<<<<<<< HEAD
+
 require( '.\/services/studentCourseSelService.js');
 require( '.\/services/courseOverviewService.js');
-=======
->>>>>>> master
+
 
 //End Services
 
