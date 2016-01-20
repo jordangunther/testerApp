@@ -57,15 +57,30 @@
 	__webpack_require__( 7);
 	__webpack_require__( 8);
 	__webpack_require__( 9);
+<<<<<<< HEAD
+	__webpack_require__( 10);
+	__webpack_require__( 11);
+	//End Of Controllers
+
+	//Services
+=======
 	//End Of Controllers
 
 	//Services
 	__webpack_require__( 10);
 	__webpack_require__( 11);
+>>>>>>> master
 	__webpack_require__( 12);
 	__webpack_require__( 13);
 	__webpack_require__( 14);
 	__webpack_require__( 15);
+<<<<<<< HEAD
+	__webpack_require__( 16);
+	__webpack_require__( 17);
+	__webpack_require__( 18);
+	__webpack_require__( 19);
+=======
+>>>>>>> master
 
 	//End Services
 
@@ -119,7 +134,21 @@
 			url: '/classInfo',
 			templateUrl: 'templates/classInfoTmpl.html',
 			controller: 'classInfoCtrl'
+<<<<<<< HEAD
+		})
+	    .state('studentCourseSel', {
+	        url: '/studentCourseSel',
+	        templateUrl: 'templates/studentCourseSel.html',
+	        controller: 'studentCourseSelCtrl'
+	    })
+	    .state('courseOverview', {
+	        url: '/course/:courseId',
+	        templateUrl: 'templates/courseOverview.html',
+	        controller: 'courseOverviewCtrl'
+	    });
+=======
 		});
+>>>>>>> master
 	//		.state('student', {
 	//				url: '/student/:studentId',
 	//				templateUrl: 'templates/studentTmpl.html',
@@ -238,6 +267,27 @@
 
 /***/ },
 /* 10 */
+<<<<<<< HEAD
+/***/ function(module, exports) {
+
+	angular.module('testerApp')
+	.controller('studentCourseSelCtrl', function($scope, studentCourseSelService){
+
+	})
+
+/***/ },
+/* 11 */
+/***/ function(module, exports) {
+
+	angular.module('testerApp')
+	.controller('courseOverviewCtrl', function($scope, studentCourseSelService){
+
+	})
+
+/***/ },
+/* 12 */
+=======
+>>>>>>> master
 /***/ function(module, exports) {
 
 	angular.module('testerApp')
@@ -247,7 +297,11 @@
 
 
 /***/ },
+<<<<<<< HEAD
+/* 13 */
+=======
 /* 11 */
+>>>>>>> master
 /***/ function(module, exports) {
 
 	angular.module('testerApp')
@@ -257,7 +311,11 @@
 
 
 /***/ },
+<<<<<<< HEAD
+/* 14 */
+=======
 /* 12 */
+>>>>>>> master
 /***/ function(module, exports) {
 
 	angular.module('testerApp')
@@ -266,7 +324,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
+/* 15 */
+=======
 /* 13 */
+>>>>>>> master
 /***/ function(module, exports) {
 
 	angular.module('testerApp')
@@ -275,7 +337,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
+/* 16 */
+=======
 /* 14 */
+>>>>>>> master
 /***/ function(module, exports) {
 
 	angular.module('testerApp')
@@ -284,7 +350,11 @@
 	})
 
 /***/ },
+<<<<<<< HEAD
+/* 17 */
+=======
 /* 15 */
+>>>>>>> master
 /***/ function(module, exports) {
 
 	angular.module('testerApp')
@@ -292,5 +362,26 @@
 
 	});
 
+<<<<<<< HEAD
+/***/ },
+/* 18 */
+/***/ function(module, exports) {
+
+	angular.module('testerApp')
+	.service('studentCourseSelService', function(){
+
+	});
+
+/***/ },
+/* 19 */
+/***/ function(module, exports) {
+
+	angular.module('testerApp')
+	.service('courseOverviewService', function(){
+
+	});
+
+=======
+>>>>>>> master
 /***/ }
 /******/ ]);
