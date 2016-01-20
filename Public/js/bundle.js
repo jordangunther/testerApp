@@ -47,15 +47,34 @@
 	//App
 	__webpack_require__( 1);
 	//Directive
+	__webpack_require__( 2);
 
 	//Controllers
-	__webpack_require__( 2);
 	__webpack_require__( 3);
+	__webpack_require__( 4);
+	__webpack_require__( 5);
+	__webpack_require__( 6);
+	__webpack_require__( 7);
+	__webpack_require__( 8);
+	__webpack_require__( 9);
+
+	__webpack_require__( 10);
+	__webpack_require__( 11);
+
 	//End Of Controllers
 
 	//Services
-	__webpack_require__( 4);
-	__webpack_require__( 5);
+	__webpack_require__( 12);
+	__webpack_require__( 13);
+	__webpack_require__( 14);
+	__webpack_require__( 15);
+	__webpack_require__( 16);
+	__webpack_require__( 17);
+
+	__webpack_require__( 18);
+	__webpack_require__( 19);
+
+
 	//End Services
 
 	//Factories
@@ -68,15 +87,17 @@
 	//		Webpack Commands:
 	//			To bundle files (from CollegeTester Dir): webpack
 	//				Thats it.
+	//				You can also use webpack to minify with: webpack -p
 
 /***/ },
 /* 1 */
 /***/ function(module, exports) {
 
 	angular.module('testerApp', ['ui.router','ui.grid', 'ngAnimate', 'ngAria', 'ngMaterial'])
+
 	.config(['$urlRouterProvider', '$stateProvider', '$mdThemingProvider', function ($urlRouterProvider, $stateProvider, $mdThemingProvider) {
 		$urlRouterProvider.otherwise('/home');
-	    $stateProvider
+		$stateProvider
 		.state('home', {
 			url: '/home',
 			templateUrl: 'templates/homeTmpl.html',
@@ -92,21 +113,76 @@
 			templateUrl: 'templates/teacherRequestTmpl.html',
 			controller: 'teacherRequestCtrl'
 		})
-	    .state('studentLogin', {
-	        url: '/studentLogin',
-	        templateUrl: 'templates/studentLoginTmpl.html',
-	        controller: 'studentLoginCtrl'
+		.state('studentLogin', {
+			url: '/studentLogin',
+			templateUrl: 'templates/studentLoginTmpl.html',
+			controller: 'studentLoginCtrl'
+		})
+		.state('studentInfo', {
+			url: '/studentInfo',
+			templateUrl: 'templates/studentInfoTmpl.html',
+			controller: 'studentInfoCtrl'
+		})
+		.state('classInfo', {
+			url: '/classInfo',
+			templateUrl: 'templates/classInfoTmpl.html',
+			controller: 'classInfoCtrl'
+
+		})
+	    .state('studentCourseSel', {
+	        url: '/studentCourseSel',
+	        templateUrl: 'templates/studentCourseSel.html',
+	        controller: 'studentCourseSelCtrl'
+	    })
+	    .state('courseOverview', {
+	        url: '/course/:courseId',
+	        templateUrl: 'templates/courseOverview.html',
+	        controller: 'courseOverviewCtrl'
 	    });
-	    // .state('student', {
-		//  	url: '/student/:studentId',
-		//  	templateUrl: 'templates/studentTmpl.html',
-		//  	controller: 'studentCtrl'
-	    // });
+
+	//		.state('student', {
+	//				url: '/student/:studentId',
+	//				templateUrl: 'templates/studentTmpl.html',
+	//				controller: 'studentCtrl'
+	//     });
+		
+		
+		$mdThemingProvider.theme('default')
+			.dark()
+			.accentPalette('blue', {
+				'default': '500',
+				'hue-1': '300',
+				'hue-1': '200',
+				'hue-1': '50',
+			})
+			.primaryPalette('green', {
+				'default': '500',
+				'hue-1': '300',
+				'hue-1': '200',
+				'hue-1': '50',
+			})
+			.warnPalette('red', {
+				'default': '500',
+				'hue-1': '300',
+				'hue-1': '200',
+				'hue-1': '50',
+			});
 	}]);
 
 
 /***/ },
 /* 2 */
+/***/ function(module, exports) {
+
+	angular.module("testerApp")
+	.directive("mainHeader", function() {
+		return {
+			templateUrl: "./templates/mainHeaderTmpl.html"				 
+		};			 
+	})
+
+/***/ },
+/* 3 */
 /***/ function(module, exports) {
 
 	angular.module('testerApp')
@@ -115,7 +191,7 @@
 	})
 
 /***/ },
-/* 3 */
+/* 4 */
 /***/ function(module, exports) {
 
 	angular.module('testerApp')
@@ -124,7 +200,82 @@
 	})
 
 /***/ },
-/* 4 */
+/* 5 */
+/***/ function(module, exports) {
+
+	angular.module('testerApp')
+	.controller('teacherRequestCtrl', function($scope, teacherRequestService) {
+
+
+	});
+
+/***/ },
+/* 6 */
+/***/ function(module, exports) {
+
+	angular.module('testerApp')
+	.controller('studentInfoCtrl', function($scope, teacherRequestService) {
+
+
+	})
+
+/***/ },
+/* 7 */
+/***/ function(module, exports) {
+
+	angular.module('testerApp')
+	.controller('studentLoginCtrl', function($scope, studentLoginService){
+
+	})
+
+/***/ },
+/* 8 */
+/***/ function(module, exports) {
+
+	angular.module('testerApp')
+	.controller('classInfoCtrl', function($scope, teacherRequestService) {
+
+
+	})
+
+/***/ },
+/* 9 */
+/***/ function(module, exports) {
+
+	angular.module("testerApp")
+	.controller("headerCtrl", ["$scope", function($scope) {
+		
+		$scope.headerBackBtn = function () {
+			var url = window.location.href;
+			window.history.back(-1);
+			console.log(url);
+		}
+		
+		$scope.headerMainText = "Welcome to College Tester";
+		$scope.headerSubText;
+		$scope.headerRightText;
+	}])
+
+/***/ },
+/* 10 */
+/***/ function(module, exports) {
+
+	angular.module('testerApp')
+	.controller('studentCourseSelCtrl', function($scope, studentCourseSelService){
+
+	})
+
+/***/ },
+/* 11 */
+/***/ function(module, exports) {
+
+	angular.module('testerApp')
+	.controller('courseOverviewCtrl', function($scope, studentCourseSelService){
+
+	})
+
+/***/ },
+/* 12 */
 /***/ function(module, exports) {
 
 	angular.module('testerApp')
@@ -134,7 +285,7 @@
 
 
 /***/ },
-/* 5 */
+/* 13 */
 /***/ function(module, exports) {
 
 	angular.module('testerApp')
@@ -142,6 +293,60 @@
 
 	})
 
+
+/***/ },
+/* 14 */
+/***/ function(module, exports) {
+
+	angular.module('testerApp')
+	.service('teacherRequestService', function(){
+
+	});
+
+/***/ },
+/* 15 */
+/***/ function(module, exports) {
+
+	angular.module('testerApp')
+	.service('studentInfoService', function(){
+
+	});
+
+/***/ },
+/* 16 */
+/***/ function(module, exports) {
+
+	angular.module('testerApp')
+	.service('studentLoginService', function($q){
+
+	})
+
+/***/ },
+/* 17 */
+/***/ function(module, exports) {
+
+	angular.module('testerApp')
+	.service('classInfoService', function(){
+
+	});
+
+/***/ },
+/* 18 */
+/***/ function(module, exports) {
+
+	angular.module('testerApp')
+	.service('studentCourseSelService', function(){
+
+	});
+
+/***/ },
+/* 19 */
+/***/ function(module, exports) {
+
+	angular.module('testerApp')
+	.service('courseOverviewService', function(){
+
+	});
 
 /***/ }
 /******/ ]);

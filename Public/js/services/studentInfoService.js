@@ -1,1 +1,4 @@
-C:\Users\jogunthe\Desktop\projects\CollegeTester\Public\js\services
+angular.module('testerApp')
+.service('studentInfoService', function(){
+
+});
