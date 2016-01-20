@@ -1,36 +1,41 @@
 <!DOCTYPE html>
-<html ng-app='testerApp'>
-<head>
-	
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="bower/angular-material/angular-material.css">
-	<title>testerApp</title>
-</head>
-<body>
-	<button ui-sref='teacherRequest'>
-		teacherRequest
-	</button>
-	<button ui-sref='classInfo'>
-		classInfo
-	</button>
-	<button ui-sref='studentInfo'>
-		studentInfo
-	</button>
-	<div ui-view></div>
-	<!-- Angular -->
-	<script src='bower/angular/angular.js'></script>
-	<script src='bower/angular-animate/angular-animate.js'></script>
-	<script src='bower/angular-aria/angular-aria.js'></script>
-	<script src='bower/angular-material/angular-material.js'></script>
-	<script src='bower/angular-ui-router/release/angular-ui-router.js'></script>
+<html data-ng-app="testerApp">
+  <head>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="bower/angular-material/angular-material.css">
+    <title>testerApp</title>
+  </head>
+  <body>
+
+    <div style='display:flex'>
+       <main-header ng-controller="headerCtrl"></main-header>
+
+    <button ui-sref='teacherRequest'>
+      teacherRequest
+    </button>
+    <button ui-sref='classInfo'>
+      classInfo
+    </button>
+    <button ui-sref='studentInfo'>
+      studentInfo
+    </button>
+    </div>
+      
+     
+
+    <div ui-view></div>
+    <!-- Angular -->
+    <script src='bower/angular/angular.js'></script>
+    <script src='bower/angular-animate/angular-animate.js'></script>
+    <script src='bower/angular-aria/angular-aria.js'></script>
+    <script src='bower/angular-material/angular-material.js'></script>
+    <script src='bower/angular-ui-router/release/angular-ui-router.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/3.0.7/ui-grid.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/3.0.7/ui-grid.min.js'></script>
     <script src="bower/angular-ui-grid/ui-grid.js"></script>
-	<!-- App Init -->
-  	<script src="js/app.js"></script>
-	<!-- Controllers -->
-	<script src="js/controllers/teacherRequestCtrl.js"></script>
-	<!-- Services -->
-	<script src="js/services/teacherRequestService.js"></script>
-	<!-- Webpack Bundle -->
-	<script src="js/bundle.js"></script>
-</body>
+
+    <!-- Webpack Bundle -->
+    <script src="js/bundle.js"></script>
+  </body>
 </html>

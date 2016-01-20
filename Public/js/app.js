@@ -1,7 +1,8 @@
 angular.module('testerApp', ['ui.router','ui.grid', 'ngAnimate', 'ngAria', 'ngMaterial'])
+
 .config(['$urlRouterProvider', '$stateProvider', '$mdThemingProvider', function ($urlRouterProvider, $stateProvider, $mdThemingProvider) {
 	$urlRouterProvider.otherwise('/home');
-    $stateProvider
+	$stateProvider
 	.state('home', {
 		url: '/home',
 		templateUrl: 'templates/homeTmpl.html',
@@ -17,14 +18,56 @@ angular.module('testerApp', ['ui.router','ui.grid', 'ngAnimate', 'ngAria', 'ngMa
 		templateUrl: 'templates/teacherRequestTmpl.html',
 		controller: 'teacherRequestCtrl'
 	})
-    .state('studentLogin', {
-        url: '/studentLogin',
-        templateUrl: 'templates/studentLoginTmpl.html',
-        controller: 'studentLoginCtrl'
+	.state('studentLogin', {
+		url: '/studentLogin',
+		templateUrl: 'templates/studentLoginTmpl.html',
+		controller: 'studentLoginCtrl'
+	})
+	.state('studentInfo', {
+		url: '/studentInfo',
+		templateUrl: 'templates/studentInfoTmpl.html',
+		controller: 'studentInfoCtrl'
+	})
+	.state('classInfo', {
+		url: '/classInfo',
+		templateUrl: 'templates/classInfoTmpl.html',
+		controller: 'classInfoCtrl'
+	})
+    .state('studentCourseSel', {
+        url: '/studentCourseSel',
+        templateUrl: 'templates/studentCourseSel.html',
+        controller: 'studentCourseSelCtrl'
+    })
+    .state('courseOverview', {
+        url: '/course/:courseId',
+        templateUrl: 'templates/courseOverview.html',
+        controller: 'courseOverviewCtrl'
     });
-    // .state('student', {
-	//  	url: '/student/:studentId',
-	//  	templateUrl: 'templates/studentTmpl.html',
-	//  	controller: 'studentCtrl'
-    // });
+//		.state('student', {
+//				url: '/student/:studentId',
+//				templateUrl: 'templates/studentTmpl.html',
+//				controller: 'studentCtrl'
+//     });
+	
+	
+	$mdThemingProvider.theme('default')
+		.dark()
+		.accentPalette('blue', {
+			'default': '500',
+			'hue-1': '300',
+			'hue-1': '200',
+			'hue-1': '50',
+		})
+		.primaryPalette('green', {
+			'default': '500',
+			'hue-1': '300',
+			'hue-1': '200',
+			'hue-1': '50',
+		})
+		.warnPalette('red', {
+			'default': '500',
+			'hue-1': '300',
+			'hue-1': '200',
+			'hue-1': '50',
+		});
 }]);
