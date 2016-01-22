@@ -1,9 +1,33 @@
+var path = require("path");
+var webpack = require("webpack");
 module.exports = {
-    context: __dirname,
-    entry: "./Public/js/entry.js",
-    output: {
-        path: "./Public/js",
-        filename: "bundle.js"
-    }
-	
-}
+	resolve: {
+    root: [path.join(__dirname, "bower_components")]
+  },
+  entry: "./Public/js/app.js",
+  output: {
+    path: __dirname,
+    filename: "./Public/js/bundle.js"
+  },
+	devServer: {
+    inline: true,
+		port: 3333
+	},
+  plugins: [
+    new webpack.ResolverPlugin(
+      new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin(".bower.json", ["main"])
+    )
+  ],
+	module: {
+		loaders: [
+			{
+				test: /\.js$/,
+				loader: "babel-loader",
+				exlude: [/bower_components/, /node_modules/],
+				query: {
+					presets: ['es2015']
+				}
+			}
+		]
+	}	
+} 

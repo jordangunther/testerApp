@@ -1,8 +1,10 @@
+//Direct Injectables
 import angular from "angular";
 import ngAnimate from "angular-animate";
 import ngAria from "angular-aria";
-import ui.router from "angular-ui-router";
+import uirouter from "angular-ui-router";
 import ngMaterial from "angular-material";
+//
 
 angular.module('testerApp', ['ui.router', 'ngAnimate', 'ngAria', 'ngMaterial'])
 
