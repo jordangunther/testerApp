@@ -5,3 +5,5 @@ bower/
 *.css.map
 .DS_Store
 bower_components
+bundle.js
+.Public/js/bundle.js
