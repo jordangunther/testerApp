@@ -38,7 +38,19 @@ angular.module('testerApp', ['ui.router', 'ngAnimate', 'ngAria', 'ngMaterial'])
 		url: '/classInfo',
 		templateUrl: 'templates/classInfoTmpl.html',
 		controller: 'classInfoCtrl'
-	});
+
+	})
+    .state('studentCourseSel', {
+        url: '/studentCourseSel',
+        templateUrl: 'templates/studentCourseSel.html',
+        controller: 'studentCourseSelCtrl'
+    })
+    .state('courseOverview', {
+        url: '/course/:courseId',
+        templateUrl: 'templates/courseOverview.html',
+        controller: 'courseOverviewCtrl'
+    });
+
 //		.state('student', {
 //				url: '/student/:studentId',
 //				templateUrl: 'templates/studentTmpl.html',
