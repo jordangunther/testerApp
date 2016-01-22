@@ -1,4 +1,5 @@
 //App
+import angular from "angular";
 require( '.\/app.js');
 //Directive
 require( '.\/directives.js');
