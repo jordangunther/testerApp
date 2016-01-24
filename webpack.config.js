@@ -1,33 +1,42 @@
-var path = require("path");
-var webpack = require("webpack");
+var path = require("path"),
+    webpack = require("webpack"),
+    ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
-	resolve: {
+	resolve: { //Searches the Bower_Components Directory not just the node_modules for requires
     root: [path.join(__dirname, "bower_components")]
   },
-  entry: "./Public/js/app.js",
+  entry: { //Entry Point for Webpack
+	  app: ["./Public/js/entry.js", "./Public/sass/entry.sass"]
+  },
   output: {
     path: __dirname,
-    filename: "./Public/js/bundle.js"
+    filename: "./Public/js/bundle.js" //Bundled Javascipt Webpack Spits out.
   },
-	devServer: {
+	devServer: { //Allows webpack-dev-server to be live reloaded
     inline: true,
-		port: 3333
+		port: 3333,
+		watch: true
+	},
+	module: {
+		loaders: [
+			{ //Babel loader for converting ES2015 to ES5
+				test: /\.js$/,
+				exclude: [/bower_components/, /node_modules/],
+				loader: 'babel-loader',
+				query: {
+					presets: ['es2015']
+		  }
+			},
+      { //Converts SASS to CSS
+        test: /\.sass$/,
+	      loader: ExtractTextPlugin.extract('css-loader?sourceMap!sass-loader?indentedSyntax')
+      }
+		]
 	},
   plugins: [
     new webpack.ResolverPlugin(
       new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin(".bower.json", ["main"])
-    )
-  ],
-	module: {
-		loaders: [
-			{
-				test: /\.js$/,
-				loader: "babel-loader",
-				exlude: [/bower_components/, /node_modules/],
-				query: {
-					presets: ['es2015']
-				}
-			}
-		]
-	}	
-} 
+    ),
+	  new ExtractTextPlugin("./Public/css/style.css")
+  ]
+};
