@@ -1,4 +1,4 @@
-angular.module('testerApp', ['ui.router','ui.grid', 'ngAnimate', 'ngAria', 'ngMaterial'])
+angular.module('testerApp', ['ui.router', 'ngAnimate', 'ngAria', 'ngMaterial'])
 
 .config(['$urlRouterProvider', '$stateProvider', '$mdThemingProvider', function ($urlRouterProvider, $stateProvider, $mdThemingProvider) {
 	$urlRouterProvider.otherwise('/home');
