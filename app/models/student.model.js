@@ -22,7 +22,7 @@ var StudentSchema = new Schema({
             pass: Boolean,
             answers: Array,
             dateTaken: Date,
-            timeTaken: String,
+            timeTaken: Number,
             certificateId: Number
         }]
     }],
