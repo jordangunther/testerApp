@@ -1,0 +1,11 @@
+{
+    adminId: 0,
+    adminName: 'Steve Young',
+    customPasswordHash: '2h4hlh342hh',
+    registrationDate: 'Sun Jan 17 2016 16:35:22 GMT-0700 (MST)',
+    school: {
+        schoolId: 0,
+        schoolName: 'Cool School'
+    }
+}
+              

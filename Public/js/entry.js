@@ -39,7 +39,7 @@ require( '.\/services/classInfoService.js');
 
 require( '.\/services/studentCourseSelService.js');
 require( '.\/services/courseOverviewService.js');
-
+require( '.\/services/dataService.js');
 
 //End Services
 

@@ -1,0 +1,36 @@
+{
+    [{
+        courseId: 0,
+        courseName: 'History of FVII',
+        teacher: {
+            teacherId: 0,
+            teacherName: 'Stephen Taylor'
+        },
+        students: [0, 1, 2, 3, 4],
+        test: [{
+            testId: 0,
+            testName: 'The Rise of Sephiroth'
+        }],
+        school: {
+            schoolId: 0,
+            schoolName: 'Cool School'
+        }
+    },
+    {
+        courseId: 1,
+        courseName: 'The People\'s History of the United States',
+        teacher: {
+            teacherId: 1,
+            teacherName: 'Howard Zinn'
+        },
+        students: [0, 1, 2, 3],
+        test: [{
+            testId: 1,
+            testName: 'The Open Veins of Central America'
+        }],
+        school: {
+            schoolId: 0,
+            schoolName: 'Cool School'
+        }
+    }]
+}

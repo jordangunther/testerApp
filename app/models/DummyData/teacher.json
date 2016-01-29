@@ -1,0 +1,22 @@
+{
+    teacherId: 123,
+    teacherName: 'Stephen Taylor',
+    initialPassword: 'Steph123',
+    customPasswordHash: 'iu1h3451uh245kj1h34l',
+    registrationDate: "Tue Jan 19 2016 18:40:27 GMT-0700 (MST)",
+    students: [0, 1, 2, 3, 4],
+    school: {
+        schoolId: 0,
+        schoolName: 'Cool School'
+    },
+    courses: [
+        {
+        courseId: 0,
+        courseName: 'History of FFVII'
+        },
+        {
+        courseId: 1,
+        courseName: 'Writings of Odin'
+        }
+     ]
+}

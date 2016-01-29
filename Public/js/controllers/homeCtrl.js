@@ -1,4 +1,4 @@
 angular.module('testerApp')
-.controller('homeCtrl', function($scope, homeService){
-
-})
+        .controller('homeCtrl', function($scope, homeService){
+                $scope.headerTitle;
+        });
