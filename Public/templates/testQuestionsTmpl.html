@@ -1,0 +1,30 @@
+<div class="mainLayout">
+    <h2 class="md-display-1">1/50</h2>
+    <h2 class="md-display-1">Course Title/ID</h2>
+    <h2 class="md-display-1">100%</h2>
+    <div>Question Content</div>
+
+    <div class="radioButtondemoBasicUsage">
+  		<form ng-submit="submit()" ng-cloak="">
+    		<p>Selected Value: 
+    			<span class="radioValue">	{{ data.group1 }}
+    			</span>
+    		</p>
+			<md-radio-group ng-model="data.group1">
+				<md-radio-button value="Answer1" class="md-primary">
+					Answer1
+				</md-radio-button>
+      			<md-radio-button value="Answer2">
+      				Answer2
+      			</md-radio-button>
+      			<md-radio-button value="Answer3">
+      				Answer3
+      			</md-radio-button>
+    		</md-radio-group>
+  		</form>
+	</div>
+	
+    <a href="">Prev</a>
+    <a href="">Next</a>
+    <md-button class="md-raised">Submit</md-button>
+</div>
