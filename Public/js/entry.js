@@ -23,7 +23,6 @@ require( '.\/controllers/studentInfoCtrl.js');
 require( '.\/controllers/studentLoginCtrl.js');
 require( '.\/controllers/classInfoCtrl.js');
 require( '.\/controllers/mainHeaderCtrl.js');
-
 require( '.\/controllers/studentCourseSelCtrl.js');
 require( '.\/controllers/courseOverviewCtrl.js');
 
@@ -36,7 +35,6 @@ require( '.\/services/teacherRequestService.js');
 require( '.\/services/studentInfoService.js');
 require( '.\/services/studentLoginService.js');
 require( '.\/services/classInfoService.js');
-
 require( '.\/services/studentCourseSelService.js');
 require( '.\/services/courseOverviewService.js');
 require( '.\/services/dataService.js');

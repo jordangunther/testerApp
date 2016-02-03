@@ -1,7 +1,7 @@
 angular.module("testerApp")
 .controller("headerCtrl", ["$scope", function($scope) {
-	
-	$scope.headerBackBtn = function() {
+
+    $scope.headerBackBtn = function() {
 		var url = window.location.href;
 		window.history.back(-1);
 		console.log(url);
