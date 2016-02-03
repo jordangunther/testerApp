@@ -7,3 +7,4 @@ bower/
 bower_components
 bundle.js
 .Public/js/bundle.js
+.idea
