@@ -5,9 +5,8 @@ import ngAria from "angular-aria";
 import uirouter from "angular-ui-router";
 import ngMaterial from "angular-material";
 
-//SASS + CSS
+//SASS + CSS Entry
 require( '../sass/entry.sass');
-// require( '../../bower_components/angular-material/angular-material.css');
 //
 
 //App
