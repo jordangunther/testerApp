@@ -3,7 +3,7 @@ var student = require('../controllers/student.ctrl'),
 
 module.exports = function(app) {
     
-    app.route('')
-        .get()
+    app.route('/student/')
+        .get(student.list)
         .post();
 }
