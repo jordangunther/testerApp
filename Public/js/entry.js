@@ -4,10 +4,10 @@ import ngAnimate from "angular-animate";
 import ngAria from "angular-aria";
 import uirouter from "angular-ui-router";
 import ngMaterial from "angular-material";
+import uigrid from "../../bower_components/angular-ui-grid/ui-grid.js";
 
-//SASS + CSS
-//require( '../sass/entry.sass');
-//require( '../../bower_components/angular-material/angular-material.css');
+//SASS + CSS Entry
+require( '../sass/entry.sass');
 //
 
 //App

@@ -53,23 +53,22 @@ angular.module('testerApp', ['ui.router', 'ngAnimate', 'ngAria', 'ngMaterial'])
 	
 	
 	$mdThemingProvider.theme('default')
-		.dark()
 		.accentPalette('blue', {
 			'default': '500',
 			'hue-1': '300',
-			'hue-1': '200',
-			'hue-1': '50',
+			'hue-2': '200',
+			'hue-3': '50'
 		})
 		.primaryPalette('green', {
 			'default': '500',
 			'hue-1': '300',
-			'hue-1': '200',
-			'hue-1': '50',
+			'hue-2': '200',
+			'hue-3': '50'
 		})
 		.warnPalette('red', {
 			'default': '500',
 			'hue-1': '300',
-			'hue-1': '200',
-			'hue-1': '50',
+			'hue-2': '200',
+			'hue-3': '50'
 		});
 }]);
