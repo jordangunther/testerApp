@@ -1,0 +1,42 @@
+<div class="mainLayout">
+  <h2 class="md-display-1">
+    Course1
+  </h2>
+  <div>
+    Question Content
+  </div>
+
+  <div class="radioButtondemoBasicUsage">
+		<form ng-submit="submit()" ng-cloak="">
+  		<p>
+        Selected Value: 
+  			<span class="radioValue">
+          {{data.selected}}
+  			</span>
+  		</p>
+			<md-radio-group ng-model="data.selected">
+				<md-radio-button value="Banana" class="md-primary">
+					Banana
+				</md-radio-button>
+  			<md-radio-button value="Apple">
+  				Apple
+  			</md-radio-button>
+  			<md-radio-button value="Orange">
+  				Orange
+  			</md-radio-button>
+      </md-radio-group>
+    </form>
+  </div>
+	<div style="float: left">
+    <a href="">
+      Prev
+    </a>
+    <a href="">
+      Next
+    </a>
+  </div>
+  <md-button class="md-raised md-accent mainBtn" ui-sref="testResults">
+    Submit
+  </md-button>
+</div>
+

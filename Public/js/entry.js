@@ -4,6 +4,7 @@ import ngAnimate from "angular-animate";
 import ngAria from "angular-aria";
 import uirouter from "angular-ui-router";
 import ngMaterial from "angular-material";
+import ngMessages from "angular-messages";
 import uigrid from "../../bower_components/angular-ui-grid/ui-grid.js";
 
 //SASS + CSS Entry
@@ -23,8 +24,12 @@ require( '.\/controllers/studentInfoCtrl.js');
 require( '.\/controllers/studentLoginCtrl.js');
 require( '.\/controllers/classInfoCtrl.js');
 require( '.\/controllers/mainHeaderCtrl.js');
-require( '.\/controllers/studentCourseSelCtrl.js');
-require( '.\/controllers/courseOverviewCtrl.js');
+require( '.\/controllers/courseSelectCtrl.js');
+require( '.\/controllers/testContentCtrl.js');
+require( '.\/controllers/testQuestionsCtrl.js');
+require( '.\/controllers/testResultsCtrl.js');
+
+
 
 //End Of Controllers
 
@@ -35,9 +40,11 @@ require( '.\/services/teacherRequestService.js');
 require( '.\/services/studentInfoService.js');
 require( '.\/services/studentLoginService.js');
 require( '.\/services/classInfoService.js');
-require( '.\/services/studentCourseSelService.js');
-require( '.\/services/courseOverviewService.js');
+require( '.\/services/courseSelectService.js');
 require( '.\/services/dataService.js');
+require( '.\/services/testContentService.js');
+require( '.\/services/testQuestionsService.js');
+require( '.\/services/testResultsService.js');
 
 //End Services
 
