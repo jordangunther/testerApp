@@ -38,10 +38,20 @@ angular.module('testerApp', ['ui.router', 'ngAnimate', 'ngAria', 'ngMaterial', '
         templateUrl: 'templates/courseSelectTmpl.html',
         controller: 'courseSelectCtrl'
     })
-    .state('courseOverview', {
-        url: '/course/:courseId',
-        templateUrl: 'templates/courseOverview.html',
-        controller: 'courseOverviewCtrl'
+    .state('testContent', {
+        url: '/testContent',
+        templateUrl: 'templates/testContentTmpl.html',
+        controller: 'testContentCtrl'
+    })
+    .state('testQuestions', {
+        url: '/testQuestions',
+        templateUrl: 'templates/testQuestionsTmpl.html',
+        controller: 'testQuestionsCtrl'
+    })
+    .state('testResults', {
+        url: '/testResults',
+        templateUrl: 'templates/testResultsTmpl.html',
+        controller: 'testResultsCtrl'
     });
 
 //		.state('student', {

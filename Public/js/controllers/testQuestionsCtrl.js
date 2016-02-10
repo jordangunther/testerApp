@@ -1,6 +1,6 @@
-angular.module('testerApp',['ngMaterial',)
-  .controller('testQuestionsCtrl', function($scope) {
-
-    $scope.data = {
-      group1 : 'Answer1',
-    };
+angular.module('testerApp')
+.controller('testQuestionsCtrl', function($scope) {
+	$scope.data = {
+  		selected : '',
+	};
+});
