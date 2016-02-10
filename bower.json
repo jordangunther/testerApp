@@ -20,5 +20,8 @@
     "angular-material": "~1.0.1",
     "angular-ui-router": "~0.2.15",
     "angular-ui-grid": "~3.0.7"
+  },
+  "resolutions": {
+    "angular": ">=1.2.16 1.4.x"
   }
 }

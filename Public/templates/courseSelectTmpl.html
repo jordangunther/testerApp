@@ -1,0 +1,7 @@
+<div class="mainLayout">
+    <h2 class="md-display-1">Select a course {{user.name}}</h2>
+    <md-select ng-model="courseSelected">
+        <md-option ng-repeat="course in courses">{{course.name}}</md-option>
+    </md-select>
+    <md-button class="md-raised md-accent mainBtn" ui-sref="testContent">Take Test</md-button>
+</div>
