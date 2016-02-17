@@ -15,7 +15,8 @@ Endpoints:
 
   course: /api/courses/[:courseId]
     Returns basic information on specific course. Accessible by students,
-    teachers, and admins from that school.
+    teachers, and admins from that school. If accessed by teacher or admin,
+    returns specific info about the course's scores for that teacher.
 
   students: /api/students
     Returns a list of students and their basic information for the specific

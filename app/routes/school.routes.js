@@ -3,7 +3,8 @@ var school = require('../controllers/school.ctrl'),
 
 module.exports = function(app) {
     
-    app.route('')
-        .get()
+    app.route('/api/school/')
+        .get(school.list)
         .post();
+    
 }

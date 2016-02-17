@@ -3,7 +3,11 @@ var teacher = require('../controllers/teacher.ctrl'),
 
 module.exports = function(app) {
     
-    app.route('')
-        .get()
+    app.route('/api/teacher/')
+        .get(teacher.list)
+        .post();
+    
+    app.route('/api/teacher/:teacherId')
+        .get(teacher.detailSpecific)
         .post();
 }

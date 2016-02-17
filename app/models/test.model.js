@@ -15,4 +15,4 @@ var TestSchema = new Schema({
     }
 });
 
-mongoose.model('Tets', TestSchema);
+mongoose.model('Test', TestSchema);

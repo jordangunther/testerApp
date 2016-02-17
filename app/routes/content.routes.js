@@ -3,7 +3,7 @@ var content = require('../controllers/content.ctrl'),
 
 module.exports = function(app) {
     
-    app.route('')
-        .get()
+    app.route('/api/content/:courseId')
+        .get(content.detailSpecific)
         .post();
 }

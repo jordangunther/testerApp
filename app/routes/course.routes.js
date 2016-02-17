@@ -3,7 +3,11 @@ var course = require('../controllers/course.ctrl'),
 
 module.exports = function(app) {
     
-    app.route('')
-        .get()
+    app.route('/api/course')
+        .get(course.list)
+        .post();
+    
+    app.route('/api/course/:courseId')
+        .get(course.detailSpecific)
         .post();
 }

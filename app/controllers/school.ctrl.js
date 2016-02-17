@@ -1,4 +1,12 @@
 var School = require('mongoose').model('School'),
     passport = require('passport');
 
-exports.login = function(){}
+exports.list = function(req, res) {
+    School.find().then(function(data){
+        if(data.length) {
+            res.send(data);
+        } else {
+            res.send('No school found with this id.');
+        }
+    })
+}

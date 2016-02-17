@@ -3,7 +3,7 @@ var admin = require('../controllers/admin.ctrl'),
 
 module.exports = function(app) {
     
-    app.route('')
+    app.route('/api/admin/')
         .get()
-        .post();
+        .post(admin.login);
 }
