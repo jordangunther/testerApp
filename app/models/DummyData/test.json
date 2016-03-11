@@ -1,0 +1,30 @@
+{
+    testId: 0,
+    testName: 'The Rise of Sephiroth',
+    questions: [
+        {
+        questionContent: 'Who is Sephiroth?',
+        answerChoices: ['Bacon', 'Zack\'s friend', 'JENOVA\'s son', 'The pope'],
+        correctAnswers: 2
+        },
+        {
+        questionContent: 'Is today Tuesday',
+        answerChoices: ['Yes', 'No', 'Definitely Not', 'Probably'],
+        correctAnswers: 3
+        },
+        {
+        questionContent: 'Fake text Fake text Fake text Fake text Fake text Fake text Fake text Fake text Fake text Fake text Fake text Fake text Fake text Fake text Fake text Fake text Fake text Fake text Fake text Fake text Fake text Fake text Fake text Fake text Fake text Fake text Fake text Fake text Fake text Fake text Fake text Fake text Fake text Fake text Fake text Fake text ',
+        answerChoices: ['Right', 'Wrong', 'Wrong', 'Wrong'],
+        correctAnswers: 0
+        },
+        {
+        questionContent: 'One word',
+        answerChoices: ['a', 'b', 'c', 'd'],
+        correctAnswers: 1
+        }
+    ],
+    course: {
+        courseId: 0,
+        courseName: 'History of FFVII'
+    }
+}

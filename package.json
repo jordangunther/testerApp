@@ -1,0 +1,38 @@
+{
+  "name": "collegetester",
+  "version": "1.0.0",
+  "description": "Test taking app for high school students looking for college credit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --progress --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordangunther/CollegeTester.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jordangunther/CollegeTester/issues"
+  },
+  "homepage": "https://github.com/jordangunther/CollegeTester#readme",
+  "dependencies": {
+    "webpack": "^1.12.11"
+  },
+  "devDependencies": {
+    "file-loader": "^0.8.5",
+    "webpack-dev-server": "^1.14.1",
+    "babel-core": "^6.4.5",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "css-loader": "^0.23.1",
+    "express": "^4.13.3",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "mongoose": "^4.3.4",
+    "node-sass": "^3.4.2",
+    "passport": "^0.3.2",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0"
+  }
+}

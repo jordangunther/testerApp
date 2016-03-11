@@ -1,0 +1,84 @@
+Teacher
+  teacherId - num
+  initialPassword - string
+  customPasswordHash - string
+  registrationDate - date
+  courses - arr of objs
+    courseId - num
+    courseName - string
+  school - obj
+    schoolId - num
+    schoolName - string
+  students - arr
+    studentId - num
+
+Course
+  courseId - num
+  courseName - string
+  teacher - arr of objs
+    teacherId - num
+    teacherName - string
+  students - arr
+    studentId - num
+  test - arr
+    testId - num
+    testName - string
+  school - arr of objs
+    schoolId - num
+    schoolName - String
+
+Student
+  studentId - num
+  studentFirstName - string
+  studentLastName - string
+  studentDOB - string
+  assignedPassword - string
+  courses - array of objs
+    courseId - num
+    test - obj
+      testId - num
+      testName - string
+      completed - boolean
+      grade - number
+      pass - boolean
+      answers [{a:correct}, {d: incorrect}...] - arr of objs
+      dateTaken - date
+      timeTaken (length) - string?date?num?
+      certificateId - number
+      fileReference - string
+  teacher - arr of obj
+    teacherId - num
+    teacherName - string
+
+Test
+  testId - num
+  testName - string
+  description - string
+  questions - arr of objs
+    questionContent - string
+    answerChoices - arr of strings
+    correctAnswers - arr of strings (if T/F: a = T, b = F)
+  course - arr of objs
+    courseId - num
+    courseName - string
+
+School
+  schoolId - num
+  schoolName - string
+  schoolLocation - string
+  schoolDescription - string
+  teachers - arr of objs
+    teacherId - num
+    teacherName - string
+  courses - arr of objs
+    courseId - num
+    courseName - string
+  students - arr
+    studentId - num
+
+Certificate
+  courseId - num
+  testId - num
+  fileReference - string
+  issuedTo - arr
+    studentId - num

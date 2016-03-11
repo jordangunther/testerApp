@@ -1,0 +1,26 @@
+{
+    schoolId: 0,
+    schoolName: 'Cool School',
+    schoolLocation: '123 Fake St., Nowheresville, KY 40204',
+    schoolDescription: 'A happy little high school where the nights are warm and the ice cream is cool',
+    teachers: [{
+        teacherId: 0,
+        teacherName: 'Stephen Taylor'
+    },
+    {   teacherId: 1,
+        teacherName: 'Marcos Sanchez'
+    }],
+    courses: [{
+        courseId: 0,
+        courseName: 'History of FVII'
+    },
+    {   
+        courseId: 1,
+        courseName: 'People\'s History of the United States'
+    }],
+    students: [0, 1, 2, 3, 4],
+    admins: [{
+        adminId: 0,
+        adminName: 'Steve Young'
+    }]
+}
