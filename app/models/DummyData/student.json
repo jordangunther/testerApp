@@ -1,0 +1,154 @@
+{
+    [
+        {
+            studentId: 0,
+            studentFirstName: 'Jordan',
+            studentLastName: 'Gunther',
+            studentDOB: 'Tue Jan 19 2016 18:40:27 GMT-0700 (MST)',
+            assignedPassword: 'JorGun',
+            teacher: {
+                teacherId: 0,
+                teacherName: 'Stephen Taylor'
+            },
+            courses: [{
+                courseId: 0,
+                courseName: 'History of FFVII',
+                tests: [{
+                    testId: 0,
+                    testName: 'The Rise of Sephiroth',
+                    completed: false,
+                    grade: 0,
+                    pass: false,
+                    answers: [],
+                    dateTaken: '',
+                    timeTaken: 0,
+                    certificateId: 0
+                }]
+            }],
+            school: {
+                schoolId: 0,
+                schoolName: 'Cool School'
+            }
+        },
+        {
+            studentId: 1,
+            studentFirstName: 'Scott',
+            studentLastName: 'Ogden',
+            studentDOB: 'Tue Jan 19 2016 18:40:27 GMT-0700 (MST)',
+            assignedPassword: 'ScoOgd',
+            teacher: {
+                teacherId: 0,
+                teacherName: 'Stephen Taylor'
+            },
+            courses: [{
+                courseId: 0,
+                courseName: 'History of FFVII',
+                tests: [{
+                    testId: 0,
+                    testName: 'The Rise of Sephiroth',
+                    completed: true,
+                    grade: 60,
+                    pass: false,
+                    answers: [0, 0, 0, 0, 0],
+                    dateTaken: 'Mon Jan 18 2016 18:35:22 GMT-0700 (MST)',
+                    timeTaken: .33,
+                    certificateId: 0
+                }]
+            }],
+            school: {
+                schoolId: 0,
+                schoolName: 'Cool School'
+            }
+        },
+        {
+            studentId: 2,
+            studentFirstName: 'Gabe',
+            studentLastName: 'Meola',
+            studentDOB: 'Tue Jan 19 2016 18:40:27 GMT-0700 (MST)',
+            assignedPassword: 'Gaben4Lyfe',
+            teacher: {
+                teacherId: 0,
+                teacherName: 'Stephen Taylor'
+            },
+            courses: [{
+                courseId: 0,
+                courseName: 'History of FFVII',
+                tests: [{
+                    testId: 0,
+                    testName: 'The Rise of Sephiroth',
+                    completed: true,
+                    grade: 100,
+                    pass: true,
+                    answers: [1, 2, 3, 2, 1],
+                    dateTaken: 'Mon Jan 18 2016 16:35:22 GMT-0700 (MST)',
+                    timeTaken: 2.52,
+                    certificateId: 2
+                }]
+            }],
+            school: {
+                schoolId: 0,
+                schoolName: 'Cool School'
+            }
+        },
+        {
+            studentId: 3,
+            studentFirstName: 'Michael',
+            studentLastName: 'Scott',
+            studentDOB: 'Tue Jan 19 2016 18:40:27 GMT-0700 (MST)',
+            assignedPassword: 'LittleKidLover',
+            teacher: {
+                teacherId: 0,
+                teacherName: 'Stephen Taylor'
+            },
+            courses: [{
+                courseId: 0,
+                courseName: 'History of FFVII',
+                tests: [{
+                    testId: 0,
+                    testName: 'The Rise of Sephiroth',
+                    completed: true,
+                    grade: 80,
+                    pass: true,
+                    answers: [1, 2, 1, 2, 1],
+                    dateTaken: 'Sun Jan 17 2016 16:35:22 GMT-0700 (MST)',
+                    timeTaken: 1.49,
+                    certificateId: 1
+                }]
+            }],
+            school: {
+                schoolId: 0,
+                schoolName: 'Cool School'
+            }
+        },
+        {
+            studentId: 4,
+            studentFirstName: 'Cloud',
+            studentLastName: 'Strife',
+            studentDOB: 'Tue Jan 19 2016 18:40:27 GMT-0700 (MST)',
+            assignedPassword: 'ImNotZack',
+            teacher: {
+                teacherId: 0,
+                teacherName: 'Stephen Taylor'
+            },
+            courses: [{
+                courseId: 0,
+                courseName: 'History of FFVII',
+                tests: [{
+                    testId: 0,
+                    testName: 'The Rise of Sephiroth',
+                    completed: true,
+                    grade: 20,
+                    pass: false,
+                    answers: [0, 3, 2, 1, 1],
+                    dateTaken: 'Wed Jan 20 2016 08:13:02 GMT-0700 (MST)',
+                    timeTaken: 1.98,
+                    certificateId: 0
+                }]
+            }],
+            school: {
+                schoolId: 0,
+                schoolName: 'Cool School'
+            }
+        }
+    ]
+}

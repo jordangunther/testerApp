@@ -1,0 +1,27 @@
+{
+  "name": "collegetester",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "scottwo <scott.w.ogden@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/jordangunther/CollegeTester",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.9",
+    "angular-material": "~1.0.1",
+    "angular-ui-router": "~0.2.15",
+    "angular-ui-grid": "~3.0.7"
+  },
+  "resolutions": {
+    "angular": ">=1.2.16 1.4.x"
+  }
+}

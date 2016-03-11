@@ -1,0 +1,6 @@
+{
+    courseId: 0,
+    testId: 0,
+    fileReference: 'app/assets/school0/course0/certificate.txt',
+    issuedTo: [2, 3]
+}

@@ -1,0 +1,29 @@
+<div ng-controller="headerCtrl">
+    <div class="main-header">
+        <div class="main-header--content">
+            <a ui-sref="home">
+                <h1>College</h1> <h1>Tester</h1>
+            </a>
+            <a href="#">
+                <div class="expand-button">
+                    <p>Slider</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="flex-wrapper">
+            <div class="lower-header--backbtn">
+                <md-button md-ripple-size="full" class="md-icon-button md-primary header-back-btn" ng-click="headerBackBtn()">BACK</md-button>
+            </div>
+            <div class="lower-header--maintext">
+                <h3>{{headerMainText}}
+                    <span class="subtext">{{headerSubText}}</span>
+                </h3>
+            </div>
+            <div class="lower-header--righttext">
+                <h3>{{headerRightText}}</h3>
+            </div>
+        </div>
+    </div>
+</div>

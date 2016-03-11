@@ -1,0 +1,10 @@
+node_modules
+bower/
+.sass-cache
+./Public/.sass-cache
+*.css.map
+.DS_Store
+bower_components
+bundle.js
+.Public/js/bundle.js
+.idea
