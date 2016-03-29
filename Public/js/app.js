@@ -1,5 +1,4 @@
-angular.module('testerApp', ['ui.router', 'ngAnimate', 'ngAria', 'ngMaterial'])
-
+angular.module('testerApp', ['ui.router', 'ngAnimate', 'ngAria', 'ngMaterial', 'ngMessages', 'ui.grid'])
 .config(['$urlRouterProvider', '$stateProvider', '$mdThemingProvider', function ($urlRouterProvider, $stateProvider, $mdThemingProvider) {
 	$urlRouterProvider.otherwise('/home');
 	$stateProvider
@@ -34,15 +33,25 @@ angular.module('testerApp', ['ui.router', 'ngAnimate', 'ngAria', 'ngMaterial'])
 		controller: 'classInfoCtrl'
 
 	})
-    .state('studentCourseSel', {
-        url: '/studentCourseSel',
-        templateUrl: 'templates/studentCourseSel.html',
-        controller: 'studentCourseSelCtrl'
+    .state('courseSelect', {
+        url: '/courseSelect',
+        templateUrl: 'templates/courseSelectTmpl.html',
+        controller: 'courseSelectCtrl'
     })
-    .state('courseOverview', {
-        url: '/course/:courseId',
-        templateUrl: 'templates/courseOverview.html',
-        controller: 'courseOverviewCtrl'
+    .state('testContent', {
+        url: '/testContent',
+        templateUrl: 'templates/testContentTmpl.html',
+        controller: 'testContentCtrl'
+    })
+    .state('testQuestions', {
+        url: '/testQuestions',
+        templateUrl: 'templates/testQuestionsTmpl.html',
+        controller: 'testQuestionsCtrl'
+    })
+    .state('testResults', {
+        url: '/testResults',
+        templateUrl: 'templates/testResultsTmpl.html',
+        controller: 'testResultsCtrl'
     });
 
 //		.state('student', {
