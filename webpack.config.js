@@ -10,7 +10,7 @@ module.exports = {
   },
   output: {
     path: __dirname,
-    filename: "./Public/js/bundle.js" //Bundled Javascipt Webpack Spits out.
+    filename: "./Public/js/bundle.js" //Bundled Javascript Webpack Spits out.
   },
 	devServer: { //Allows webpack-dev-server to be live reloaded
     inline: true,
@@ -25,7 +25,7 @@ module.exports = {
 				loader: 'babel-loader',
 				query: {
 					presets: ['es2015']
-		  }
+		    }
 			},
       { //Converts SASS to CSS
         test: /\.sass$/,
