@@ -33,33 +33,26 @@ angular.module('testerApp', ['ui.router', 'ngAnimate', 'ngAria', 'ngMaterial', '
 		controller: 'classInfoCtrl'
 
 	})
-    .state('courseSelect', {
-        url: '/courseSelect',
-        templateUrl: 'templates/courseSelectTmpl.html',
-        controller: 'courseSelectCtrl'
-    })
-    .state('testContent', {
-        url: '/testContent',
-        templateUrl: 'templates/testContentTmpl.html',
-        controller: 'testContentCtrl'
-    })
-    .state('testQuestions', {
-        url: '/testQuestions',
-        templateUrl: 'templates/testQuestionsTmpl.html',
-        controller: 'testQuestionsCtrl'
-    })
-    .state('testResults', {
-        url: '/testResults',
-        templateUrl: 'templates/testResultsTmpl.html',
-        controller: 'testResultsCtrl'
-    });
-
-//		.state('student', {
-//				url: '/student/:studentId',
-//				templateUrl: 'templates/studentTmpl.html',
-//				controller: 'studentCtrl'
-//     });
-	
+  .state('courseSelect', {
+      url: '/courseSelect',
+      templateUrl: 'templates/courseSelectTmpl.html',
+      controller: 'courseSelectCtrl'
+  })
+  .state('testContent', {
+      url: '/testContent',
+      templateUrl: 'templates/testContentTmpl.html',
+      controller: 'testContentCtrl'
+  })
+  .state('testQuestions', {
+      url: '/testQuestions',
+      templateUrl: 'templates/testQuestionsTmpl.html',
+      controller: 'testQuestionsCtrl'
+  })
+  .state('testResults', {
+      url: '/testResults',
+      templateUrl: 'templates/testResultsTmpl.html',
+      controller: 'testResultsCtrl'
+  });
 	
 	$mdThemingProvider.theme('default')
 		.accentPalette('blue', {
