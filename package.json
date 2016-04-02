@@ -1,5 +1,5 @@
 {
-  "name": "collegetester",
+  "name": "testerApp",
   "version": "1.0.0",
   "description": "Test taking app for high school students looking for college credit",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jordangunther/CollegeTester.git"
+    "url": "git+https://github.com/jordangunther/testerApp.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jordangunther/CollegeTester/issues"
+    "url": "https://github.com/jordangunther/testerApp/issues"
   },
-  "homepage": "https://github.com/jordangunther/CollegeTester#readme",
+  "homepage": "https://github.com/jordangunther/testerApp#readme",
   "dependencies": {
     "webpack": "^1.12.14"
   },
