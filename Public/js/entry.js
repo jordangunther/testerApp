@@ -7,10 +7,6 @@ import ngMaterial from "angular-material";
 import ngMessages from "angular-messages";
 import uigrid from "../../bower_components/angular-ui-grid/ui-grid.js";
 
-//SASS + CSS Entry
-require( '../sass/entry.sass');
-//
-
 //App
 require( '.\/app.js');
 //Directive
