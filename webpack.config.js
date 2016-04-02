@@ -48,6 +48,6 @@ module.exports = {
     new webpack.ResolverPlugin(
       new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin(".bower.json", ["main"])
     ),
-	  new ExtractTextPlugin("./css/style.css")
+	  new ExtractTextPlugin("./style.css")
   ]
 };
