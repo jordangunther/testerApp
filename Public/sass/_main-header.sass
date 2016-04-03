@@ -1,57 +1,46 @@
 .main-header
-  width: 100vw
-  min-height: 65px
-  max-height: 15vh
-  background-color: darkgray
-  position: relative
-  top: 0
-  &--content
-    width: 90%
-    margin: 0 auto
-    a
-      text-decoration: none
-    h1
-      font-size: 2em
-      display: inline-block
-      color: $black
-      &:nth-child(2)
-        color: orange
-    .expand-button
-      width: 90px
-      height: 40px
-      float: right
-      border: 3px solid lightgray
-      color: gray
-      margin: 2vh 0 0 0
-      transition: $transition
-      border-radius: 5%
-      &:hover
-        background-color: rgba(255, 255, 255, 0.30)
-      p
-        margin: 10% 0 0 0
-        position: relative
-        left: 25%
-.lower-header
-  height: 40px
-  width: 100vw
-  background-color: lightgray
-  position: relative
-  .flex-wrapper
-    display: flex
-    width: 90%
-    margin: 0 auto
-    flex-direction: row
-    justify-content: space-between
-    align-items: center
-    height: 40px
-    .lower-header
-      &--backbtn
-        .header-back-btn
-          width: 50px
-          height: 50px
-      &--maintext
-        h3
-        .subtext
-          font-style: italic
-          font-size: 80%
-          color: gray
+	width: 100vw
+	position: fixed
+	top: 0
+	z-index: 9999
+	.main-header-top
+		background-color: rgba(255, 255, 255, 0.95)
+		height: 70px
+		width: 100%
+		box-sizing: border-box
+		border-bottom: 1px solid #424242
+		.main-header-top-wrapper
+			width: 98%
+			height: 45%
+			position: absolute
+			top: 15px
+			text-align: left
+			left: 2%
+			.main-header-divider
+				width: 2px
+				background-color: $light-green
+				height: 100%
+				display: inline-block
+			h1
+				font-family: $sourceSansPro
+				color: $black
+				font-size: 38px
+				font-weight: 600
+				display: inline-block
+				position: relative
+				bottom: 10px
+				margin-right: 10px
+			p
+				font-size: 16px
+				font-weight: 400
+				color: $light-green
+				font-family: $sourceSansPro
+				display: inline-block
+				position: absolute
+				margin-left: 10px
+				top: 6px
+	.main-header-bottom
+		height: 16px
+		width: 100%
+		background-color: rgba(77, 223, 207, 0.98)
+		box-sizing: border-box
