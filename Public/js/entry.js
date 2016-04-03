@@ -6,6 +6,8 @@ import uirouter from "angular-ui-router";
 import ngMaterial from "angular-material";
 import ngMessages from "angular-messages";
 import uigrid from "../../bower_components/angular-ui-grid/ui-grid.js";
+import "lodash";
+import "angular-toastr";
 
 //App
 require( '.\/app.js');
