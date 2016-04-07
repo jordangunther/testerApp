@@ -1,7 +1,7 @@
 angular.module("testerApp")
 .directive("mainHeader", function() {
 	return {
-		templateUrl: "./templates/mainHeaderTmpl.html",
+		templateUrl: "./templates/_mainHeader.html",
         controller: "headerCtrl",
         scope: {
             headerTitle: '='

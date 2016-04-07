@@ -1,20 +1,14 @@
 <!DOCTYPE html>
 <html data-ng-app="testerApp">
   <head>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/3.0.7/ui-grid.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
     <title>testerApp</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <!-- Webpack Bundle -->
+    <script src="/js/bundle.js"></script>
   </head>
   <body ng-controller="homeCtrl">
 
     <main-header></main-header>
-
-
-    <div ui-view></div> 
-    
-
-    <!-- Webpack Bundle -->
-    <script src="js/bundle.js"></script>
+    <ui-view></ui-view>
   </body>
 </html>

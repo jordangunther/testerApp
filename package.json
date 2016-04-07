@@ -1,5 +1,5 @@
 {
-  "name": "collegetester",
+  "name": "testerApp",
   "version": "1.0.0",
   "description": "Test taking app for high school students looking for college credit",
   "main": "index.js",
@@ -9,21 +9,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jordangunther/CollegeTester.git"
+    "url": "git+https://github.com/jordangunther/testerApp.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jordangunther/CollegeTester/issues"
+    "url": "https://github.com/jordangunther/testerApp/issues"
   },
-  "homepage": "https://github.com/jordangunther/CollegeTester#readme",
+  "homepage": "https://github.com/jordangunther/testerApp#readme",
   "dependencies": {
-    "webpack": "^1.12.11"
+    "angular-toastr": "^1.7.0",
+    "webpack": "^1.12.14"
   },
   "devDependencies": {
     "file-loader": "^0.8.5",
     "webpack-dev-server": "^1.14.1",
-    "babel-core": "^6.4.5",
+    "babel-core": "^6.7.4",
     "babel-loader": "^6.2.1",
     "babel-preset-es2015": "^6.3.13",
     "css-loader": "^0.23.1",
@@ -33,6 +34,10 @@
     "node-sass": "^3.4.2",
     "passport": "^0.3.2",
     "sass-loader": "^3.1.2",
-    "style-loader": "^0.13.0"
+    "lodash": "^4.7.0",
+    "style-loader": "^0.13.1",
+    "image-webpack-loader": "^1.6.3",
+    "ng-file-upload": "^12.0.4",
+    "resolve-url-loader": "^1.4.3"
   }
 }

@@ -9,8 +9,8 @@ module.exports = {
 	  app: ["./Public/js/entry.js", "./Public/sass/entry.sass"]
   },
   output: {
-    path: __dirname,
-    filename: "./Public/js/bundle.js" //Bundled Javascipt Webpack Spits out.
+    path: "Public/",
+    filename: "js/bundle.js" //Bundled Javascript Webpack Spits out.
   },
 	devServer: { //Allows webpack-dev-server to be live reloaded
     inline: true,
@@ -25,15 +25,22 @@ module.exports = {
 				loader: 'babel-loader',
 				query: {
 					presets: ['es2015']
-		  }
+		    }
 			},
       { //Converts SASS to CSS
         test: /\.sass$/,
-	      loader: ExtractTextPlugin.extract('css-loader?sourceMap!sass-loader?indentedSyntax')
+	      loader: ExtractTextPlugin.extract('css-loader?sourceMap!resolve-url!sass-loader?indentedSyntax')
       },
 			{ //Loads the font files from imports
 				test:  /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
-				loader: 'file-loader?name=/Public/fonts/[name].[ext]&context=./Public/fonts'
+				loader: 'file-loader?name=./assets/fonts/[name].[ext]&context=./assets'
+			},
+			{ //Optimizes Images
+				test: /\.(jpe?g|png|gif|svg)$/i,
+				loaders: [
+					'file?hash=sha512&digest=hex&name=./assets/min-icons/[hash].[ext]',
+					'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=true&progressive=true'
+				]
 			}
 		]
 	},
@@ -41,6 +48,6 @@ module.exports = {
     new webpack.ResolverPlugin(
       new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin(".bower.json", ["main"])
     ),
-	  new ExtractTextPlugin("./Public/css/style.css")
+	  new ExtractTextPlugin("./style.css")
   ]
 };
