@@ -10,39 +10,39 @@ import "lodash";
 import "angular-toastr";
 
 //App
-require( '.\/app.js');
+import './app.js';
 //Directive
-require( '.\/directives.js');
+import './directives.js';
 
 //Controllers
-require( '.\/controllers/homeCtrl.js');
-require( '.\/controllers/teacherLoginCtrl.js');
-require( '.\/controllers/teacherRequestCtrl.js');
-require( '.\/controllers/studentInfoCtrl.js');
-require( '.\/controllers/studentLoginCtrl.js');
-require( '.\/controllers/classInfoCtrl.js');
-require( '.\/controllers/mainHeaderCtrl.js');
-require( '.\/controllers/courseSelectCtrl.js');
-require( '.\/controllers/testContentCtrl.js');
-require( '.\/controllers/testQuestionsCtrl.js');
-require( '.\/controllers/testResultsCtrl.js');
+import './controllers/homeCtrl.js';
+import './controllers/teacherLoginCtrl.js';
+import './controllers/teacherRequestCtrl.js';
+import './controllers/studentInfoCtrl.js';
+import './controllers/studentLoginCtrl.js';
+import './controllers/classInfoCtrl.js';
+import './controllers/mainHeaderCtrl.js';
+import './controllers/courseSelectCtrl.js';
+import './controllers/testContentCtrl.js';
+import './controllers/testQuestionsCtrl.js';
+import './controllers/testResultsCtrl.js';
 
 
 
 //End Of Controllers
 
 //Services
-require( '.\/services/homeService.js');
-require( '.\/services/teacherLoginService.js');
-require( '.\/services/teacherRequestService.js');
-require( '.\/services/studentInfoService.js');
-require( '.\/services/studentLoginService.js');
-require( '.\/services/classInfoService.js');
-require( '.\/services/courseSelectService.js');
-require( '.\/services/dataService.js');
-require( '.\/services/testContentService.js');
-require( '.\/services/testQuestionsService.js');
-require( '.\/services/testResultsService.js');
+import './services/homeService.js';
+import './services/teacherLoginService.js';
+import './services/teacherRequestService.js';
+import './services/studentInfoService.js';
+import './services/studentLoginService.js';
+import './services/classInfoService.js';
+import './services/courseSelectService.js';
+import './services/dataService.js';
+import './services/testContentService.js';
+import './services/testQuestionsService.js';
+import './services/testResultsService.js';
 
 //End Services
 
