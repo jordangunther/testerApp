@@ -1,5 +1,5 @@
 {
-  "name": "testerApps",
+  "name": "testerApp",
   "version": "1.0.0",
   "description": "Test taking app for high school students looking for college credit",
   "main": "index.js",
