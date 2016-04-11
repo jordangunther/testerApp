@@ -19,7 +19,7 @@ Webpack uses Nodejs' require. So to add another file just reference it like so
 require( '.\/dirname/filename.js');
 ```
 
-In our entry.js file we also can inject external libraries like angularjs with either require or the hip new ES2015 import with
+In our entry.js file we also can inject external libraries like angularjs with either require or the new ES2015 import with
 ```
 import angular from "angular";
 ```
