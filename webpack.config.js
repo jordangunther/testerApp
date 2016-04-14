@@ -7,16 +7,17 @@ module.exports = {
     root: [path.join(__dirname, "bower_components")]
   },
   entry: { //Entry Point for Webpack
-	  app: ["./Public/js/entry.js", "./Public/sass/entry.sass"]
+	  app: ["./public/js/entry.js", "./public/sass/entry.sass"]
   },
   output: {
-    path: "Public/",
+    path: "public/",
     filename: "js/bundle.js" //Bundled Javascript Webpack Spits out.
   },
 	devServer: { //Allows webpack-dev-server to be live reloaded
     inline: true,
 		port: 3333,
-		watch: true
+		watch: true,
+		hot: true
 	},
 	module: {
 		loaders: [
