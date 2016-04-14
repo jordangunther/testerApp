@@ -15,38 +15,17 @@ import './app.js';
 import './directives.js';
 
 //Controllers
-import './controllers/homeCtrl.js';
-import './controllers/teacherLoginCtrl.js';
-import './controllers/teacherRequestCtrl.js';
-import './controllers/studentInfoCtrl.js';
-import './controllers/studentLoginCtrl.js';
-import './controllers/classInfoCtrl.js';
-import './controllers/mainHeaderCtrl.js';
 import './controllers/courseSelectCtrl.js';
-import './controllers/testContentCtrl.js';
 import './controllers/testQuestionsCtrl.js';
-import './controllers/testResultsCtrl.js';
-
-
-
+import './controllers/classInfoCtrl.js';
 //End Of Controllers
 
 //Services
-import './services/homeService.js';
-import './services/teacherLoginService.js';
-import './services/teacherRequestService.js';
-import './services/studentInfoService.js';
-import './services/studentLoginService.js';
-import './services/classInfoService.js';
-import './services/courseSelectService.js';
 import './services/dataService.js';
-import './services/testContentService.js';
-import './services/testQuestionsService.js';
-import './services/testResultsService.js';
-
 //End Services
 
 //Factories
+
 //End of Factories
 
 //Addons
