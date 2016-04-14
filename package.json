@@ -19,7 +19,8 @@
   "homepage": "https://github.com/jordangunther/testerApp#readme",
   "dependencies": {
     "angular-toastr": "^1.7.0",
-    "webpack": "^1.12.14"
+    "webpack": "^1.12.14",
+    "postcss-loader": "^0.8.2"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
@@ -36,7 +37,6 @@
     "ng-file-upload": "^12.0.4",
     "node-sass": "^3.4.2",
     "passport": "^0.3.2",
-    "postcss-loader": "^0.8.2",
     "resolve-url-loader": "^1.4.3",
     "sass-loader": "^3.1.2",
     "style-loader": "^0.13.1",

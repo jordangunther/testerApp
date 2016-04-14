@@ -10,18 +10,20 @@ import "lodash";
 import "angular-toastr";
 
 //App
-import './app.js';
+import './app';
 //Directive
-import './directives.js';
+import './directives';
 
 //Controllers
-import './controllers/courseSelectCtrl.js';
-import './controllers/testQuestionsCtrl.js';
-import './controllers/classInfoCtrl.js';
+import './controllers/courseSelectCtrl';
+import './controllers/testQuestionsCtrl';
+import './controllers/classInfoCtrl';
+import './controllers/mainHeaderCtrl'
+import './controllers/studentInfoCtrl'
 //End Of Controllers
 
 //Services
-import './services/dataService.js';
+import './services/dataService';
 //End Services
 
 //Factories
