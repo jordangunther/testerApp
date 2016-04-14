@@ -16,8 +16,7 @@ module.exports = {
 	devServer: { //Allows webpack-dev-server to be live reloaded
     inline: true,
 		port: 3333,
-		watch: true,
-		hot: true
+		watch: true
 	},
 	module: {
 		loaders: [
