@@ -3,7 +3,7 @@ var path = require("path"),
     ExtractTextPlugin = require('extract-text-webpack-plugin'),
 		autoprefixer = require('autoprefixer');
 module.exports = {
-	resolve: { //Searches the Bower_Components Directory not just the node_modules for requires
+	resolve: { //Searches the Bower_Components Directory not just the node_modules for imports
     root: [path.join(__dirname, "bower_components")]
   },
   entry: { //Entry Point for Webpack
@@ -34,7 +34,7 @@ module.exports = {
 	      loader: ExtractTextPlugin.extract('css-loader?sourceMap!postcss-loader!resolve-url!sass-loader?indentedSyntax')
       },
 			{ //Loads the font files from imports
-				test:  /\.(ttf|eot|woff(2)?)(\?[a-z0-9]+)?$/,
+				test:  /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
 				loader: 'file-loader?name=./assets/fonts/[name].[ext]&context=./assets'
 			},
 			{ //Optimizes Images
