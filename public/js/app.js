@@ -10,17 +10,17 @@ angular.module('testerApp', ['ui.router', 'ngAnimate', 'ngAria', 'ngMaterial', '
 		.state('teacherLogin', {
 			url: '/teacherLogin',
 			templateUrl: 'templates/teacherLoginTmpl.html',
-			controller: 'teacherLoginCtrl'
+			controller: null
 		})
 		.state('teacherRequest', {
 			url: '/teacherRequest',
 			templateUrl: 'templates/teacherRequestTmpl.html',
-			controller: 'teacherRequestCtrl'
+			controller: null
 		})
 		.state('studentLogin', {
 			url: '/studentLogin',
 			templateUrl: 'templates/studentLoginTmpl.html',
-			controller: 'studentLoginCtrl'
+			controller: null
 		})
 		.state('studentInfo', {
 			url: '/studentInfo',

@@ -10,8 +10,9 @@ module.exports = {
 	  app: ["./public/js/entry.js", "./public/sass/entry.sass"]
   },
   output: {
-    path: "public/",
-    filename: "js/bundle.js" //Bundled Javascript Webpack Spits out.
+    path: "public/build/",
+    filename: "bundle.js",
+	  publicPath: "http://localhost:3333/public/build/" //Bundled Javascript Webpack Spits out.
   },
 	devServer: { //Allows webpack-dev-server to be live reloaded
     inline: true,
@@ -51,6 +52,6 @@ module.exports = {
     new webpack.ResolverPlugin(
       new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin(".bower.json", ["main"])
     ),
-	  new ExtractTextPlugin("./style.css")
+	  new ExtractTextPlugin("style.css")
   ]
 };

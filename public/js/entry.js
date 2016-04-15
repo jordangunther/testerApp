@@ -15,6 +15,7 @@ import './app';
 import './directives';
 
 //Controllers
+import './controllers/homeCtrl'
 import './controllers/courseSelectCtrl';
 import './controllers/testQuestionsCtrl';
 import './controllers/classInfoCtrl';
