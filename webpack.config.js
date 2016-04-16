@@ -16,6 +16,7 @@ module.exports = {
   },
 	devServer: { //Allows webpack-dev-server to be live reloaded
     inline: true,
+		hot: true,
 		port: 3333,
 		watch: true
 	},
@@ -49,6 +50,7 @@ module.exports = {
 	//Config for Post-CSS and AutoPrefixer
 	postcss: [ autoprefixer({ remove: false, browsers: ['last 2 versions'] }) ],
   plugins: [
+	  new webpack.HotModuleReplacementPlugin(),
     new webpack.ResolverPlugin(
       new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin(".bower.json", ["main"])
     ),
