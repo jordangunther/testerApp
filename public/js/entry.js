@@ -19,7 +19,7 @@ import './controllers/homeCtrl'
 import './controllers/courseSelectCtrl';
 import './controllers/testQuestionsCtrl';
 import './controllers/classInfoCtrl';
-import './controllers/mainHeaderCtrl'
+import '../components/main-header/mainHeader.ctrl'
 import './controllers/studentInfoCtrl'
 //End Of Controllers
 

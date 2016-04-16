@@ -1,5 +1,5 @@
 angular.module('testerApp')
-	.controller('studentInfoCtrl', function($scope) {
+	.controller('studentInfoCtrl', ["$scope", function($scope) {
 
 		($scope.getStudentInfo = function (){
 				$scope.myData = [{
@@ -14,4 +14,4 @@ angular.module('testerApp')
 				};
 				console.log($scope.myData);
 			})();
-	});
+	}]);

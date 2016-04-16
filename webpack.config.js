@@ -13,7 +13,7 @@ module.exports = {
   output: {
     path: "public/build/",
     filename: "bundle.js",
-	  publicPath: "/" //Bundled Javascript Webpack Spits out.
+	  publicPath: "//localhost:3333/public/build/" //Bundled Javascript Webpack Spits out.
   },
 	devServer: { //Allows webpack-dev-server to be live reloaded
     inline: true,

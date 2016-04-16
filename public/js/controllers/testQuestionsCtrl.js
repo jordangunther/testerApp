@@ -1,6 +1,6 @@
 angular.module('testerApp')
-.controller('testQuestionsCtrl', function($scope) {
-	$scope.data = {
-  		selected : '',
-	};
-});
+	.controller('testQuestionsCtrl', ["$scope", function($scope) {
+		$scope.data = {
+	      selected : ''
+		};
+	}]);

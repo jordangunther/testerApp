@@ -1,4 +1,4 @@
 angular.module('testerApp')
-	.controller('homeCtrl', function($scope) {
+	.controller('homeCtrl', ["$scope", function($scope) {
 
-	});
+	}]);

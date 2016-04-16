@@ -41,7 +41,7 @@ angular.module('testerApp', ['ui.router', 'ngAnimate', 'ngAria', 'ngMaterial', '
 	  .state('testContent', {
 	      url: '/testContent',
 	      template: require('../templates/testContentTmpl.html'),
-	      controller: 'testContentCtrl'
+	      controller: null
 	  })
 	  .state('testQuestions', {
 	      url: '/testQuestions',
@@ -51,7 +51,7 @@ angular.module('testerApp', ['ui.router', 'ngAnimate', 'ngAria', 'ngMaterial', '
 	  .state('testResults', {
 	      url: '/testResults',
 	      template: require('../templates/testResultsTmpl.html'),
-	      controller: 'testResultsCtrl'
+	      controller: null
 	  });
 
 	$mdThemingProvider.theme('default')

@@ -1,5 +1,5 @@
 angular.module('testerApp')
-.service('dataService', function(){
+.service('dataService', [ function(){
     
     this.data = {
         admin: {
@@ -359,4 +359,4 @@ angular.module('testerApp')
             return this.data.content;
         }
     };
-});
+}]);

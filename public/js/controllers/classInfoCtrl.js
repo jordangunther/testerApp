@@ -1,4 +1,4 @@
 angular.module('testerApp')
-.controller('classInfoCtrl', function($scope, teacherRequestService) {
+	.controller('classInfoCtrl', ["$scope", function($scope) {
 
-})
+	}]);
