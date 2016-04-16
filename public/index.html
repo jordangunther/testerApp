@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html data-ng-app="testerApp">
+  <head>
+    <title>testerApp</title>
+    <meta lang="en-US">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="./build/style.css">
+    <!-- Webpack Bundle -->
+    <script src="./build/bundle.js"></script>
+  </head>
+  <body ng-controller="homeCtrl">
+
+    <main-header></main-header>
+    <ui-view></ui-view>
+  </body>
+</html>
