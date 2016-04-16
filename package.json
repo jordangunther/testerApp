@@ -31,6 +31,7 @@
     "express": "^4.13.3",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
+    "html-loader": "^0.4.3",
     "image-webpack-loader": "^1.6.3",
     "lodash": "^4.7.0",
     "mongoose": "^4.3.4",

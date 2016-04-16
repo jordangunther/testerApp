@@ -4,7 +4,8 @@ var path = require("path"),
 		autoprefixer = require('autoprefixer');
 module.exports = {
 	resolve: { //Searches the Bower_Components Directory not just the node_modules for imports
-    root: [path.join(__dirname, "bower_components")]
+    root: [path.join(__dirname, "bower_components")],
+		extensions: ["", ".js", ".jsx"]
   },
   entry: { //Entry Point for Webpack
 	  app: ["./public/js/entry.js", "./public/sass/entry.sass"]
@@ -44,6 +45,10 @@ module.exports = {
 					'file?hash=sha512&digest=hex&name=./assets/min-icons/[hash].[ext]',
 					'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=true&progressive=true'
 				]
+			},
+			{ //Loads HTML imports/requires
+				test: /\.html$/,
+				loader: "html"
 			}
 		]
 	},
