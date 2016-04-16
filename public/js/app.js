@@ -4,53 +4,53 @@ angular.module('testerApp', ['ui.router', 'ngAnimate', 'ngAria', 'ngMaterial', '
 	$stateProvider
 		.state('home', {
 			url: '/home',
-			templateUrl: 'templates/_home.html',
+			template: require('../templates/_home.html'),
 			controller: 'homeCtrl'
 		})
 		.state('teacherLogin', {
 			url: '/teacherLogin',
-			templateUrl: 'templates/teacherLoginTmpl.html',
+			template: require('../templates/teacherLoginTmpl.html'),
 			controller: null
 		})
 		.state('teacherRequest', {
 			url: '/teacherRequest',
-			templateUrl: 'templates/teacherRequestTmpl.html',
+			template: require('../templates/teacherRequestTmpl.html'),
 			controller: null
 		})
 		.state('studentLogin', {
 			url: '/studentLogin',
-			templateUrl: 'templates/studentLoginTmpl.html',
+			template: require('../templates/studentLoginTmpl.html'),
 			controller: null
 		})
 		.state('studentInfo', {
 			url: '/studentInfo',
-			templateUrl: 'templates/studentInfoTmpl.html',
+			template: require('../templates/studentInfoTmpl.html'),
 			controller: 'studentInfoCtrl'
 		})
 		.state('classInfo', {
 			url: '/classInfo',
-			templateUrl: 'templates/classInfoTmpl.html',
+			template: require('../templates/classInfoTmpl.html'),
 			controller: 'classInfoCtrl'
 
 		})
 	  .state('courseSelect', {
 	      url: '/courseSelect',
-	      templateUrl: 'templates/courseSelectTmpl.html',
+	      template: require('../templates/courseSelectTmpl.html'),
 	      controller: 'courseSelectCtrl'
 	  })
 	  .state('testContent', {
 	      url: '/testContent',
-	      templateUrl: 'templates/testContentTmpl.html',
+	      template: require('../templates/testContentTmpl.html'),
 	      controller: 'testContentCtrl'
 	  })
 	  .state('testQuestions', {
 	      url: '/testQuestions',
-	      templateUrl: 'templates/testQuestionsTmpl.html',
+	      template: require('../templates/testQuestionsTmpl.html'),
 	      controller: 'testQuestionsCtrl'
 	  })
 	  .state('testResults', {
 	      url: '/testResults',
-	      templateUrl: 'templates/testResultsTmpl.html',
+	      template: require('../templates/testResultsTmpl.html'),
 	      controller: 'testResultsCtrl'
 	  });
 
