@@ -4,53 +4,53 @@ angular.module('testerApp', ['ui.router', 'ngAnimate', 'ngAria', 'ngMaterial', '
 	$stateProvider
 		.state('home', {
 			url: '/home',
-			template: require('../templates/_home.html'),
+			template: require('../components/landing/landing.view.html'),
 			controller: 'homeCtrl'
 		})
 		.state('teacherLogin', {
 			url: '/teacherLogin',
-			template: require('../templates/teacherLoginTmpl.html'),
+			template: require('../components/landing/teacher-login/teacherLogin.view.html'),
 			controller: null
 		})
 		.state('teacherRequest', {
 			url: '/teacherRequest',
-			template: require('../templates/teacherRequestTmpl.html'),
+			template: require('../components/teacher-landing/teacherRequestTmpl.html'),
 			controller: null
 		})
 		.state('studentLogin', {
 			url: '/studentLogin',
-			template: require('../templates/studentLoginTmpl.html'),
+			template: require('../components/landing/student-login/studentLogin.view.html'),
 			controller: null
 		})
 		.state('studentInfo', {
 			url: '/studentInfo',
-			template: require('../templates/studentInfoTmpl.html'),
+			template: require('../components/teacher-landing/studentInfoTmpl.html'),
 			controller: 'studentInfoCtrl'
 		})
 		.state('classInfo', {
 			url: '/classInfo',
-			template: require('../templates/classInfoTmpl.html'),
+			template: require('../components/teacher-landing/classInfoTmpl.html'),
 			controller: 'classInfoCtrl'
 
 		})
 	  .state('courseSelect', {
 	      url: '/courseSelect',
-	      template: require('../templates/courseSelectTmpl.html'),
+	      template: require('../components/student-landing/course-select/courseSelect.view.html'),
 	      controller: 'courseSelectCtrl'
 	  })
 	  .state('testContent', {
 	      url: '/testContent',
-	      template: require('../templates/testContentTmpl.html'),
+	      template: require('../components/student-tests/studentTest.view.html'),
 	      controller: null
 	  })
 	  .state('testQuestions', {
 	      url: '/testQuestions',
-	      template: require('../templates/testQuestionsTmpl.html'),
+	      template: require('../components/student-tests/test-questions/testQuestions.view.html'),
 	      controller: 'testQuestionsCtrl'
 	  })
 	  .state('testResults', {
 	      url: '/testResults',
-	      template: require('../templates/testResultsTmpl.html'),
+	      template: require('../components/student-tests/test-results/testResults.view.html'),
 	      controller: null
 	  });
 

@@ -11,20 +11,20 @@ import "angular-toastr";
 
 //App
 import './app';
-//Directive
-import './directives';
 
 //Controllers
-import './controllers/homeCtrl'
-import './controllers/courseSelectCtrl';
-import './controllers/testQuestionsCtrl';
-import './controllers/classInfoCtrl';
-import '../components/main-header/mainHeader.ctrl'
-import './controllers/studentInfoCtrl'
+import '../components/landing/landing.ctrl';
+import '../components/main-header/mainHeader.ctrl';
+import '../components/landing/student-login/studentLogin.ctrl';
+import '../components/landing/teacher-login/teacherLogin.ctrl';
+import '../components/student-landing/course-select/courseSelect.ctrl';
+import './../components/student-tests/test-questions/testQuestions.ctrl';
+import './../components/teacher-landing/classInfoCtrl';
+import './../components/teacher-landing/studentInfoCtrl';
 //End Of Controllers
 
 //Services
-import './services/dataService';
+import './dataService';
 //End Services
 
 //Factories
