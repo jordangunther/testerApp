@@ -1,1 +1,0 @@
-angular.module('testerApp', ['ui.router', 'ngAnimate', 'ngAria', 'ngMaterial', 'ngMessages', 'ui.grid', 'toastr']);
