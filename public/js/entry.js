@@ -12,7 +12,7 @@ import "angular-toastr";
 //App
 import './app'
 import './routes.config'
-import './materialThemes.config.js'
+import './materialThemes.config'
 
 //Controllers
 import '../components/landing/landing.ctrl';
