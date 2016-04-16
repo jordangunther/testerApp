@@ -4,8 +4,8 @@
   "description": "Test taking app for high school students looking for college credit",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --progress --colors"
+    "start": "webpack-dev-server --progress --colors",
+    "build": "webpack --config webpack.config.prod.js"
   },
   "repository": {
     "type": "git",
