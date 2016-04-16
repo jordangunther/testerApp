@@ -11,6 +11,8 @@ import "angular-toastr";
 
 //App
 import './app';
+import './routes.config'
+import './materialThemes.config.js'
 
 //Controllers
 import '../components/landing/landing.ctrl';
