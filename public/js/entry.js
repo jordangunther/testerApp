@@ -10,7 +10,7 @@ import "lodash";
 import "angular-toastr";
 
 //App
-import './app';
+import './app'
 import './routes.config'
 import './materialThemes.config.js'
 
@@ -25,15 +25,8 @@ import './../components/teacher-landing/classInfoCtrl';
 import './../components/teacher-landing/studentInfoCtrl';
 //End Of Controllers
 
-//Services
-import './dataService';
-//End Services
-
-//Factories
-
-//End of Factories
-
 //Addons
+import './dataService';
 
 //NOTES:
 //		To add on more files to bundle just follow the format above
