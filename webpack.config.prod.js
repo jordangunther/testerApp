@@ -12,15 +12,8 @@ module.exports = {
   },
   output: {
     path: "public/build/",
-    filename: "bundle.js",
-	  publicPath: "//localhost:3333/public/build/" //Bundled Javascript Webpack Spits out.
+    filename: "bundle.js" //Bundled Javascript Webpack Spits out.
   },
-	devServer: { //Allows webpack-dev-server to be live reloaded
-    inline: true,
-		hot: true,
-		port: 3333,
-		watch: true
-	},
 	module: {
 		loaders: [
 			{ //Babel loader for converting ES2015 to ES5
@@ -55,7 +48,6 @@ module.exports = {
 	//Config for Post-CSS and AutoPrefixer
 	postcss: [ autoprefixer({ remove: false, browsers: ['last 2 versions'] }) ],
   plugins: [
-	  new webpack.HotModuleReplacementPlugin(),
     new webpack.ResolverPlugin(
       new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin(".bower.json", ["main"])
     ),

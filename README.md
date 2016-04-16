@@ -1,7 +1,7 @@
 ## Installation
 
 ### Webpack
-Webpack is a compiler that will compile your files into one bundled javascipt file. 
+Webpack is a compiler that will compile your files into one bundled javascript file. 
 
 Webpack allows loader (such as babel) to ease the development process such as transforming ES2015 into ES5 javascipt that browser today can understand.
 
@@ -19,7 +19,7 @@ Webpack uses Nodejs' require. So to add another file just reference it like so
 require( '.\/dirname/filename.js');
 ```
 
-In our entry.js file we also can inject external libraries like angularjs with ethier require or the hip new ES2015 import with
+In our entry.js file we also can inject external libraries like angularjs with either require or the new ES2015 import with
 ```
 import angular from "angular";
 ```
@@ -60,9 +60,9 @@ For Windows
 SASS compiles .sass files into css.
 We can add sass files to our entry.sass files with @import 
 ```
-@import 'reset';
-@import 'header';
-@import 'footer';
+@import 'reset'
+@import 'header'
+@import 'footer'
 ```
 This is exporting to css/main.css
 ##### SASS Rules

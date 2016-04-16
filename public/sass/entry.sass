@@ -1,0 +1,44 @@
+//Importable Stylesheets
+@import "../../bower_components/angular-material/angular-material.css"
+@import "../../bower_components/angular-ui-grid/ui-grid.css"
+//End of Importable Stylesheets
+
+//Variables
+$transition: all .2s ease-in-out
+
+$sourceSansPro: 'Source Sans Pro', sans-serif
+
+$black: #5a5a5a
+$light-green: #4ddfcf
+$gray: #dfdfdf
+$light-gray: #f6f6f6
+//End of Variables
+
+//Animations
+
+//End of Animations
+
+//Fonts
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,600,700,900)
+//End of Fonts
+
+//SASS Imports
+@import "reset"
+@import "global"
+@import "main-header"
+@import "landing"
+@import "testQuestions"
+//End of Imports
+
+//Notes
+	//	SASS Rules:
+	//		Keep SASS happy buy using TAB(size = 2) not SPACES
+	//		SASS recognizes _filename.sass template files as filename.sass, so just add @import like above and you're good.
+	//		To compile SASS into main.css just run the command(s) below
+
+	//	SASS Commands:
+	//		Compiles SASS to css/style.css: 
+	//				sass ./public/sass/entry.sass ./public/css/style.css
+	//
+	//		Auto Compiler, runs everytime your save a change to any SASS file: 
+	//				sass --watch ./public/sass/entry.sass:./public/css/style.css
