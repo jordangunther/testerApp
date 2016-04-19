@@ -23,6 +23,6 @@
     "angular-animate": "^1.5.3"
   },
   "resolutions": {
-    "angular": "1.5.3"
+    "angular": "1.5.5"
   }
 }
