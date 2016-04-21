@@ -1,5 +1,5 @@
 <div>
-	<div>
+	<div class="off-column-left">
 		<div style= "width: 270px; padding-top: 30px; padding-left: 5%; float:left">
 			<img src="https://avatars1.githubusercontent.com/u/14005131?v=3&s=40" style= "border-radius: 48px; border: 3px solid #4ddfcf; width: 80px;">
 			<h2 style= "float:right; padding-top: 30px">Hotties Name</h2>
@@ -8,18 +8,20 @@
 			<br>
 			<h3 style= "text-align:center">Teacher's Name</h3>
 		</div>
-		<div layout="column" style= "height:600px; width: 40%; margin-left: 16px; border-radius: 48px; border: 1px solid #ddd;" ng-cloak="" class="toolbardemoScrollShrink">
+	</div>
+	<div Class="off-column-right">
+		<div layout="column" style= "margin-left: 60px; margin-top:150px; width: 500px; border: 2px solid #ddd;">
 		  	<md-toolbar md-scroll-shrink="" ng-if="true">
 		    	<div class="md-toolbar-tools">
 		        	<h3><span>{{title}}</span></h3>
 		      	</div>
 		    </md-toolbar>
-	  		<md-content half>
+	  		<md-content>
 		    	<md-list>
-		      		<md-list-item class="md-3-line" ng-repeat="course in courses">
-		        		<div class="md-list-item-text">
-		          			<h3 style="float: left">{{course}}</h3>
-		          			<md-button class="md-raised md-primary" ui-sref="testContent" style= "float:right" ng-click="showAlert($event)">test</md-button>
+		      		<md-list-item ng-repeat="course in courses">
+		      			<div style="width:100%;">
+		          			<h2 style= "float: left; margin-left: 50px; margin-top: 10px;">{{course}}</h2>
+		        			<md-button class="md-raised md-primary" ui-sref="testContent" ng-click="showAlert($event)" style= "float:right">test</md-button>
 		        		</div>
 		        		<md-divider inset=""></md-divider>
 		      		</md-list-item>
