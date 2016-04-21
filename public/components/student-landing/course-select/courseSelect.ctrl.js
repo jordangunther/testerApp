@@ -1,5 +1,6 @@
 angular.module('testerApp')
 .controller('courseSelectCtrl', function($scope){
-	$scope.courses = [{name: "course1"}, {name: "course2"}];
-	$scope.courseSelected = "course1";
+	$scope.title = "List of Courses";
+	// $scope.courses = [{name: "course1", discription: "this is about math", score: null}, {name: "course2", discription: "this is about science", score: null}, {name: "course1", discription: "this is about math", score: 80%}]
+	$scope.courses = ["course1", "course2", "course3"];
 })
